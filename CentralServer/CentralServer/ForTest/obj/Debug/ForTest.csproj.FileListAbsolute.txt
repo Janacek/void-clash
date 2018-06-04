@@ -1,0 +1,5 @@
+D:\Work\Epitech\Void Clash\repo\void-clash\CentralServer\CentralServer\ForTest\bin\Debug\ForTest.exe.config
+D:\Work\Epitech\Void Clash\repo\void-clash\CentralServer\CentralServer\ForTest\bin\Debug\ForTest.exe
+D:\Work\Epitech\Void Clash\repo\void-clash\CentralServer\CentralServer\ForTest\bin\Debug\ForTest.pdb
+D:\Work\Epitech\Void Clash\repo\void-clash\CentralServer\CentralServer\ForTest\obj\Debug\ForTest.exe
+D:\Work\Epitech\Void Clash\repo\void-clash\CentralServer\CentralServer\ForTest\obj\Debug\ForTest.pdb

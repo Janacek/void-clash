@@ -1,0 +1,23 @@
+﻿Modify Server Model (Models > Server.cs)
+
+Modify the Seed in Migrations > Configuration.cs (maybe not mandatory)
+
+https://msdn.microsoft.com/en-us/data/jj591621
+
+Tools –> Library Package Manager –> Package Manager Console
+
+Run the "Install-Package EntityFramework" command
+
+Run the "Enable-Migrations" command
+
+Run the "Add-Migration TheNameOfTheMigration" (ex Add-Migration UpdateServerPort)
+
+Run the "Update-Database"
+
+Right click on Controllers -> Add new -> New Scaffolded Item -> MVC 5 Controller with views, using Entity Framework
+
+Name it "AdminServer"
+
+Base Model is Server.cs
+
+Overwrite old one

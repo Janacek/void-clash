@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0921490E-7CBD-4543-866E-9DD6F1653CD9}</ProjectGuid>
+    <RootNamespace>server</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\dependencies\SFML\inc;$(ProjectDir)..\..\..\sources\shared\Event\inc;$(ProjectDir)..\..\..\sources\shared\Files\inc;$(ProjectDir)..\..\..\sources\shared\GameEngine\inc;$(ProjectDir)..\..\..\sources\shared\LibJson\inc;$(ProjectDir)..\..\..\sources\API;$(ProjectDir)..\..\..\sources\shared\Map\inc;$(ProjectDir)..\..\..\sources\shared\PhysicEngine\inc;$(ProjectDir)..\..\..\sources\common\inc;$(ProjectDir)..\..\..\dependencies\glm;$(ProjectDir)..\..\..\dependencies;$(ProjectDir)..\..\..\sources\server\inc;$(ProjectDir)..\..\..\dependencies\Tinyxml;$(ProjectDir)..\..\..\dependencies\GLFW;%(AdditionalIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;OGL_DEBUG_LEVEL=2;%(PreprocessorDefinitions);VOIDCLASH_SERVER</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4305;4244;4996;4800</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\dependencies\SFML\libs;$(ProjectDir)..\..\..\dependencies;$(ProjectDir)..\..\..\dependencies\Tinyxml;$(ProjectDir)\..\..\..\dependencies\cegui-0.8.4\cegui-0.8.4\build\lib;$(ProjectDir)\..\..\..\dependencies\cegui-0.8.4\cegui-0.8.4\dependencies\lib;%(AdditionalLibraryDirectories);$(ProjectDir)..\..\..\dependencies\SOIL\lib;$(ProjectDir)..\..\..\dependencies\Assimp\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-network-d.lib;sfml-system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\dependencies\SFML\inc;$(ProjectDir)..\..\..\sources\shared\Event\inc;$(ProjectDir)..\..\..\sources\shared\Files\inc;$(ProjectDir)..\..\..\sources\shared\GameEngine\inc;$(ProjectDir)..\..\..\sources\API;$(ProjectDir)..\..\..\sources\shared\LibJson\inc;$(ProjectDir)..\..\..\sources\shared\Map\inc;$(ProjectDir)..\..\..\sources\shared\PhysicEngine\inc;$(ProjectDir)..\..\..\sources\common\inc;$(ProjectDir)..\..\..\dependencies\glm;$(ProjectDir)..\..\..\dependencies;$(ProjectDir)..\..\..\sources\server\inc;$(ProjectDir)..\..\..\dependencies\Tinyxml;$(ProjectDir)..\..\..\dependencies\GLFW;%(AdditionalIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;OGL_DEBUG_LEVEL=0;%(PreprocessorDefinitions);VOIDCLASH_SERVER</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4305;4244;4996;4800</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\dependencies\SFML\libs;$(ProjectDir)..\..\..\dependencies;$(ProjectDir)..\..\..\dependencies\Tinyxml;$(ProjectDir)\..\..\..\dependencies\cegui-0.8.4\cegui-0.8.4\dependencies\lib;$(ProjectDir)\..\..\..\dependencies\cegui-0.8.4\cegui-0.8.4\build\lib;%(AdditionalLibraryDirectories);$(ProjectDir)..\..\..\dependencies\SOIL\lib;$(ProjectDir)..\..\..\dependencies\Assimp\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-network.lib;sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>COPY $(SolutionDir)\Release\server.exe $(ProjectDir)..\..\..\Installer\Windows\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\sources\common\src\globals.cpp" />
+    <ClCompile Include="..\..\..\sources\server\src\ClientHandle.cpp" />
+    <ClCompile Include="..\..\..\sources\server\src\Command.cpp" />
+    <ClCompile Include="..\..\..\sources\server\src\main.cpp" />
+    <ClCompile Include="..\..\..\sources\server\src\Manager.cpp" />
+    <ClCompile Include="..\..\..\sources\server\src\NetworkEngine.cpp" />
+    <ClCompile Include="..\..\..\sources\server\src\Receiver.cpp" />
+    <ClCompile Include="..\..\..\sources\server\src\Sender.cpp" />
+    <ClCompile Include="..\..\..\sources\server\src\SenderEventHandling.cpp" />
+    <ClCompile Include="..\..\..\sources\server\src\SenderInsertion.cpp" />
+    <ClCompile Include="..\..\..\sources\server\src\WebSender.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\Event\src\Event.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\Event\src\EventContainer.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\Files\src\Files_unix.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\Files\src\Files_win32.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\Files\src\Log.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\AI.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\AObject.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\AWeapon.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Bomb.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Bot.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Bullet.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Capture.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Explosion.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Flag.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\GameEngine.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\GravityField.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Player.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Respawn.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Rocket.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\SpeedField.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Turret.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Wall.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\WeaponManager.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\LibJson\src\ConfigParser.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\LibJson\src\json_reader.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\LibJson\src\json_value.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\LibJson\src\json_writer.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\LibJson\src\MapParser.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\LibJson\src\Parser.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\Map\src\Map.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\Map\src\MapDatabase.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\Map\src\MapMode.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\PhysicEngine\src\PhysicEngine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\sources\common\inc\AEngine.hpp" />
+    <ClInclude Include="..\..\..\sources\common\inc\Defines.h" />
+    <ClInclude Include="..\..\..\sources\common\inc\main.hpp" />
+    <ClInclude Include="..\..\..\sources\server\inc\ClientHandle.hpp" />
+    <ClInclude Include="..\..\..\sources\server\inc\Command.hpp" />
+    <ClInclude Include="..\..\..\sources\server\inc\Manager.hpp" />
+    <ClInclude Include="..\..\..\sources\server\inc\NamedPipes.hpp" />
+    <ClInclude Include="..\..\..\sources\server\inc\NetworkEngine.hpp" />
+    <ClInclude Include="..\..\..\sources\server\inc\Receiver.hpp" />
+    <ClInclude Include="..\..\..\sources\server\inc\Sender.hpp" />
+    <ClInclude Include="..\..\..\sources\server\inc\WebSender.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\Event\inc\Event.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\Event\inc\EventComponent.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\Event\inc\EventContainer.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\Files\inc\Files.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\Files\inc\Log.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Actions.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\AI.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\AObject.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Bomb.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Bot.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Bullet.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Capture.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Explosion.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Flag.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\GameEngine.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\GravityField.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Player.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Respawn.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Rocket.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\SpeedField.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Turret.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Wall.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\WeaponManager.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\autolink.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\config.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\ConfigParser.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\features.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\forwards.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\json.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\json_batchallocator.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\MapParser.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\MapStructures.h" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\Parser.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\reader.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\value.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\writer.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\Map\inc\Map.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\Map\inc\MapDatabase.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\Map\inc\MapMode.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\PhysicEngine\inc\PhysicEngine.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\sources\shared\LibJson\inc\json_valueiterator.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

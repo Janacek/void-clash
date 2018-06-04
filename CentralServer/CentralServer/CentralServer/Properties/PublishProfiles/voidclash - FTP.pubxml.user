@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAW4eSo6Aw40CdNNjys3ZmbQAAAAACAAAAAAAQZgAAAAEAACAAAAANVYwXXdFsb0qRWo3TMFVfJb5n0AgdecXiVysKu4XOcwAAAAAOgAAAAAIAACAAAADGmxDFvjEAP7rLh8VPLbc54ycpOcf/r2YBff/y21B4xYAAAAC4BqOsBoBrXsJRgQMKjswm3DqpOwi6O1RAVVlB6wsHxkJ6wXbpbdic1EHe5THssVU0uJ23/5zn2nK8cwrRNtcmRa4pzRnI9p7+04akji22SeFKZb7DB5N9p7XG9D7asrZnPlfqYWbmocd7e4Z2oCHgjsBHcQo4DiaXFFpkgYm8SkAAAABCGy5UUIVkAjPAA+RPdv1akXOLnOhMg23KVhAS6pKG5/MRKRe9JZdIcnKiWp0gcv9jLEIJPfO3OIVPXfs+xcY9</EncryptedPassword>
+    <_PublishTargetUrl>ftp://waws-prod-db3-019.ftp.azurewebsites.windows.net/site/wwwroot</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Data/XmlDocument.xml">
+      <publishTime>03/05/2015 03:50:15</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/HelpPage.css">
+      <publishTime>02/17/2015 04:44:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Api.cshtml">
+      <publishTime>02/17/2015 04:44:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ApiGroup.cshtml">
+      <publishTime>02/17/2015 04:44:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/HelpPageApiModel.cshtml">
+      <publishTime>02/17/2015 04:44:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ImageSample.cshtml">
+      <publishTime>02/17/2015 04:44:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/InvalidSample.cshtml">
+      <publishTime>02/17/2015 04:44:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Parameters.cshtml">
+      <publishTime>02/17/2015 04:44:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Samples.cshtml">
+      <publishTime>02/17/2015 04:44:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/TextSample.cshtml">
+      <publishTime>02/17/2015 04:44:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Index.cshtml">
+      <publishTime>02/17/2015 04:44:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Shared/_Layout.cshtml">
+      <publishTime>02/17/2015 04:44:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Web.config">
+      <publishTime>02/17/2015 04:44:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/_ViewStart.cshtml">
+      <publishTime>02/17/2015 04:43:44</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/17/2015 04:44:17</publishTime>
+    </File>
+    <File Include="bin/App_Data/XmlDocument.xml">
+      <publishTime>03/05/2015 03:50:15</publishTime>
+    </File>
+    <File Include="bin/CentralServer.dll">
+      <publishTime>03/05/2015 04:03:52</publishTime>
+    </File>
+    <File Include="bin/Controllers/ServerController.cs">
+      <publishTime>03/05/2015 04:02:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>02/17/2015 04:44:13</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>02/17/2015 04:43:59</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>02/17/2015 04:44:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>02/17/2015 04:44:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>02/17/2015 04:44:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>02/17/2015 04:44:15</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>02/17/2015 04:44:13</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/17/2015 04:44:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>02/17/2015 04:44:11</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>02/17/2015 04:44:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>02/17/2015 04:44:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>02/17/2015 04:44:12</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>02/17/2015 04:44:18</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>02/17/2015 04:43:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>02/17/2015 04:43:58</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>02/17/2015 04:43:44</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>02/17/2015 04:43:44</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>02/17/2015 04:43:58</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>02/17/2015 04:43:58</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>02/17/2015 04:43:58</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>02/17/2015 04:43:58</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>02/17/2015 04:43:44</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>02/17/2015 04:44:19</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>02/17/2015 04:43:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>02/17/2015 04:43:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>02/17/2015 04:44:01</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>02/17/2015 04:44:01</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>02/17/2015 04:44:01</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>02/17/2015 04:44:17</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>02/17/2015 04:44:19</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>02/17/2015 04:44:19</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>02/17/2015 04:44:17</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>02/17/2015 08:06:39</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>02/17/2015 04:43:44</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>02/17/2015 04:43:44</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>02/17/2015 04:43:44</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>02/17/2015 04:43:44</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/05/2015 04:04:04</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

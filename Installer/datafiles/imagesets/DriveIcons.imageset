@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Imageset version="1" name="Icons" imagefile="Icons.png" nativeHorzRes="64" nativeVertRes="64" autoScaled="vertical">
+	<Image Name="newNormal" XPos="0" YPos="0"  Width="32" Height="32" />
+	<Image Name="newHover"  XPos="0" YPos="32" Width="32" Height="32" />
+	<Image Name="newPushed" XPos="32" YPos="0" Width="32" Height="32" />
+	<Image Name="newDisabl" XPos="32" YPos="32" Width="32" Height="32" />
+</Imageset>

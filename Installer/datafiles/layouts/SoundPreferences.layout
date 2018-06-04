@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="GlossySerpentFHD/FrameWindow" name="SoundPreferences" >
+        <Property name="Area" value="{{0.25,0},{0.25,0},{0.75,0},{0.75,0}}" />
+        <Property name="Visible" value="false" />
+        <Property name="SizingEnabled" value="false" />
+        <Property name="TitlebarEnabled" value="false" />
+        <Property name="CloseButtonEnabled" value="false" />
+        <Property name="AutoRenderingSurface" value="true" />
+        <AutoWindow namePath="__auto_titlebar__" >
+            <Property name="NonClient" value="true" />
+            <Property name="AlwaysOnTop" value="false" />
+        </AutoWindow>
+        <AutoWindow namePath="__auto_closebutton__" >
+            <Property name="NonClient" value="true" />
+            <Property name="AlwaysOnTop" value="true" />
+        </AutoWindow>
+        <Window type="OgreTray/VerticalScrollbar" name="SoundVolumeScrollbar" >
+            <Property name="Area" value="{{0,620},{0,213},{0.0400835,620},{0.4,213}}" />
+            <AutoWindow namePath="__auto_incbtn__" >
+                <Property name="Visible" value="false" />
+            </AutoWindow>
+            <AutoWindow namePath="__auto_decbtn__" >
+                <Property name="Visible" value="false" />
+            </AutoWindow>
+        </Window>
+        <Window type="OgreTray/StaticText" name="Title" >
+            <Property name="Area" value="{{0.3,0},{0.01,0},{0.699582,0},{0.210743,0}}" />
+            <Property name="Text" value="Sound Options" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="HorzFormatting" value="CentreAligned" />
+            <Property name="HorzScrollPageSize" value="275.667" />
+            <Property name="VertScrollPageSize" value="76.6667" />
+            <Property name="HorzScrollDocumentSize" value="161" />
+            <Property name="VertScrollDocumentSize" value="22.7886" />
+            <AutoWindow namePath="__auto_hscrollbar__" >
+                <AutoWindow namePath="__auto_incbtn__" >
+                    <Property name="Visible" value="false" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_decbtn__" >
+                    <Property name="Visible" value="false" />
+                </AutoWindow>
+            </AutoWindow>
+            <AutoWindow namePath="__auto_vscrollbar__" >
+                <AutoWindow namePath="__auto_incbtn__" >
+                    <Property name="Visible" value="false" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_decbtn__" >
+                    <Property name="Visible" value="false" />
+                </AutoWindow>
+            </AutoWindow>
+        </Window>
+        <Window type="GlossySerpentFHD/StaticText" name="SoundVolumeLabel" >
+            <Property name="Area" value="{{0.549896,0},{0.455019,0},{0.549896,160},{0.455019,120}}" />
+            <Property name="Text" value="Volume" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="FrameEnabled" value="true" />
+            <Property name="HorzFormatting" value="CentreAligned" />
+            <Property name="BackgroundEnabled" value="true" />
+            <AutoWindow namePath="__auto_vscrollbar__" >
+                <Property name="VerticalScrollbar" value="true" />
+            </AutoWindow>
+        </Window>
+        <Window type="GlossySerpentFHD/StaticText" name="SoundMuteLabel" >
+            <Property name="Area" value="{{0.120251,0},{0.458364,0},{0.120251,160},{0.458364,120}}" />
+            <Property name="Text" value="Mute" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="FrameEnabled" value="true" />
+            <Property name="HorzFormatting" value="CentreAligned" />
+            <Property name="BackgroundEnabled" value="true" />
+            <AutoWindow namePath="__auto_vscrollbar__" >
+                <Property name="VerticalScrollbar" value="true" />
+            </AutoWindow>
+        </Window>
+        <Window type="OgreTray/Checkbox" name="SoundMuteCheckbox" >
+            <Property name="Area" value="{{0.229228,0},{0.526952,0},{0.389562,0},{0.580483,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="TaharezLook/FrameWindow" name="OptionsWindow" >
+        <Property name="Area" value="{{0.389375,0},{0.196666,1},{0.619375,0},{0.787499,1}}" />
+        <Property name="TitlebarEnabled" value="false" />
+        <Property name="CloseButtonEnabled" value="false" />
+        <Window type="GlossySerpentFHD/StaticText" name="OptionWindowLabel" >
+            <Property name="Area" value="{{0.2,0},{0.1,0},{0.8,0},{0.2,0}}" />
+            <Property name="Text" value="OPTIONS" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="FrameEnabled" value="true" />
+            <Property name="HorzFormatting" value="CentreAligned" />
+            <Property name="BackgroundEnabled" value="true" />
+            <AutoWindow namePath="__auto_vscrollbar__" >
+                <Property name="VerticalScrollbar" value="true" />
+            </AutoWindow>
+        </Window>
+        <Window type="GlossySerpentFHD/Button" name="OptionsGraphicButton" >
+            <Property name="Area" value="{{0.2,0},{0.25,-3},{0.8,0},{0.33,-3}}" />
+            <Property name="Text" value="GRAPHIC OPTIONS" />
+        </Window>
+        <Window type="GlossySerpentFHD/Button" name="OptionsSoundButton" >
+            <Property name="Area" value="{{0.2,0},{0.38,0},{0.8,0},{0.46,0}}" />
+            <Property name="Text" value="SOUND OPTIONS" />
+        </Window>
+        <Window type="GlossySerpentFHD/Button" name="OptionsKeysButton" >
+            <Property name="Area" value="{{0.2,0},{0.51,0},{0.8,0},{0.59,0}}" />
+            <Property name="Text" value="KEYS OPTIONS" />
+        </Window>
+        <Window type="GlossySerpentFHD/Button" name="OptionsNickButton" >
+            <Property name="Area" value="{{0.2,0},{0.64,1},{0.8,0},{0.72,1}}" />
+            <Property name="Text" value="CHANGE NICKNAME" />
+        </Window>
+        <Window type="GlossySerpentFHD/Editbox" name="OptionsNickEditbox" >
+            <Property name="Area" value="{{0.2,0},{0.64,0},{0.8,0},{0.72,0}}" />
+            <Property name="Visible" value="false" />
+        </Window>
+        <Window type="GlossySerpentFHD/Button" name="OptionsValidate" >
+            <Property name="Area" value="{{0.2,0},{0.82,0},{0.8,0},{0.9,0}}" />
+            <Property name="Text" value="VALIDATE" />
+        </Window>
+    </Window>
+</GUILayout>

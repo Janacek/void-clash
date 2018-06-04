@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\sources\NewMapEditor\src\GUIManager.cpp" />
+    <ClCompile Include="..\..\..\sources\common\src\globals.cpp">
+      <Filter>Souce Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\NewMapEditor\src\InputEngine.cpp">
+      <Filter>Souce Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\NewMapEditor\src\KeyParameters.cpp">
+      <Filter>Souce Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\NewMapEditor\src\main.cpp">
+      <Filter>Souce Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\NewMapEditor\src\Manager.cpp">
+      <Filter>Souce Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\NewMapEditor\src\SoundEngine.cpp">
+      <Filter>Souce Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\Event\src\Event.cpp">
+      <Filter>Souce Files\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\Event\src\EventContainer.cpp">
+      <Filter>Souce Files\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\Files\src\Files_unix.cpp">
+      <Filter>Souce Files\Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\Files\src\Files_win32.cpp">
+      <Filter>Souce Files\Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\AObject.cpp">
+      <Filter>Souce Files\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\AWeapon.cpp">
+      <Filter>Souce Files\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Bomb.cpp">
+      <Filter>Souce Files\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Bot.cpp">
+      <Filter>Souce Files\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Bullet.cpp">
+      <Filter>Souce Files\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Capture.cpp">
+      <Filter>Souce Files\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Explosion.cpp">
+      <Filter>Souce Files\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Flag.cpp">
+      <Filter>Souce Files\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\GameEngine.cpp">
+      <Filter>Souce Files\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\GravityField.cpp">
+      <Filter>Souce Files\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Player.cpp">
+      <Filter>Souce Files\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Respawn.cpp">
+      <Filter>Souce Files\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Rocket.cpp">
+      <Filter>Souce Files\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\SpeedField.cpp">
+      <Filter>Souce Files\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Turret.cpp">
+      <Filter>Souce Files\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Wall.cpp">
+      <Filter>Souce Files\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\WeaponManager.cpp">
+      <Filter>Souce Files\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\LibJson\src\ConfigParser.cpp">
+      <Filter>Souce Files\LibJson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\LibJson\src\json_reader.cpp">
+      <Filter>Souce Files\LibJson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\LibJson\src\json_value.cpp">
+      <Filter>Souce Files\LibJson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\LibJson\src\json_writer.cpp">
+      <Filter>Souce Files\LibJson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\LibJson\src\KeyPreferencesParser.cpp">
+      <Filter>Souce Files\LibJson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\LibJson\src\MapParser.cpp">
+      <Filter>Souce Files\LibJson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\LibJson\src\Parser.cpp">
+      <Filter>Souce Files\LibJson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\Map\src\Map.cpp">
+      <Filter>Souce Files\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\Map\src\MapMode.cpp">
+      <Filter>Souce Files\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\PhysicEngine\src\PhysicEngine.cpp">
+      <Filter>Souce Files\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\NewMapEditor\src\CustomListBoxItem.cpp">
+      <Filter>Souce Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\NewMapEditor\src\GUICallbacks.cpp">
+      <Filter>Souce Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\NewMapEditor\src\MapData.cpp">
+      <Filter>Souce Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\LibJson\src\MapSaver.cpp">
+      <Filter>Souce Files\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\NewMapEditor\src\GUIEngine.cpp">
+      <Filter>Souce Files\GUIEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\Map\src\MapDatabase.cpp" />
+    <ClCompile Include="..\..\..\sources\common\src\HudRessources.cpp">
+      <Filter>Souce Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\Files\src\Log.cpp">
+      <Filter>Souce Files\Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\AI.cpp">
+      <Filter>Souce Files\GameEngine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\sources\NewMapEditor\inc\GUIManager.h" />
+    <ClInclude Include="..\..\..\sources\common\inc\AEngine.hpp">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\common\inc\Defines.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\common\inc\HudRessources.hpp">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\NewMapEditor\inc\InputEngine.hpp">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\common\inc\main.hpp">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\NewMapEditor\inc\Manager.hpp">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\NewMapEditor\inc\SoundEngine.hpp">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\Event\inc\Event.hpp">
+      <Filter>Header Files\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\Event\inc\EventContainer.hpp">
+      <Filter>Header Files\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\Event\inc\EventComponent.hpp">
+      <Filter>Header Files\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\Files\inc\Files.hpp">
+      <Filter>Header Files\Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Actions.hpp">
+      <Filter>Header Files\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\AObject.hpp">
+      <Filter>Header Files\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\AWeapon.hpp">
+      <Filter>Header Files\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Bomb.hpp">
+      <Filter>Header Files\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Bot.hpp">
+      <Filter>Header Files\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Bullet.hpp">
+      <Filter>Header Files\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Capture.hpp">
+      <Filter>Header Files\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Explosion.hpp">
+      <Filter>Header Files\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Flag.hpp">
+      <Filter>Header Files\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\GameEngine.hpp">
+      <Filter>Header Files\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\GravityField.hpp">
+      <Filter>Header Files\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Player.hpp">
+      <Filter>Header Files\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Respawn.hpp">
+      <Filter>Header Files\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Rocket.hpp">
+      <Filter>Header Files\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\SpeedField.hpp">
+      <Filter>Header Files\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Turret.hpp">
+      <Filter>Header Files\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Wall.hpp">
+      <Filter>Header Files\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\WeaponManager.hpp">
+      <Filter>Header Files\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\autolink.hpp">
+      <Filter>Header Files\LibJson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\ConfigParser.hpp">
+      <Filter>Header Files\LibJson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\config.hpp">
+      <Filter>Header Files\LibJson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\features.hpp">
+      <Filter>Header Files\LibJson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\forwards.hpp">
+      <Filter>Header Files\LibJson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\json.hpp">
+      <Filter>Header Files\LibJson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\json_batchallocator.hpp">
+      <Filter>Header Files\LibJson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\KeyPreferencesParser.h">
+      <Filter>Header Files\LibJson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\MapParser.hpp">
+      <Filter>Header Files\LibJson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\MapStructures.h">
+      <Filter>Header Files\LibJson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\Parser.hpp">
+      <Filter>Header Files\LibJson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\reader.hpp">
+      <Filter>Header Files\LibJson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\value.hpp">
+      <Filter>Header Files\LibJson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\writer.hpp">
+      <Filter>Header Files\LibJson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\Map\inc\Map.hpp">
+      <Filter>Header Files\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\Map\inc\MapMode.hpp">
+      <Filter>Header Files\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\PhysicEngine\inc\PhysicEngine.hpp">
+      <Filter>Header Files\PhysicEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\NewMapEditor\inc\KeysParameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\NewMapEditor\inc\CustomListBoxItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\NewMapEditor\inc\GUICallbacks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\NewMapEditor\inc\MapData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\MapSaver.h">
+      <Filter>Header Files\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\NewMapEditor\inc\GUIEngine.h">
+      <Filter>Header Files\GUIEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\Map\inc\MapDatabase.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\Files\inc\Log.hpp">
+      <Filter>Header Files\Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\AI.hpp">
+      <Filter>Header Files\GameEngine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{57a0b8bf-747e-483f-93ba-2fcd0ac5e22e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Souce Files">
+      <UniqueIdentifier>{8386d0f7-95e5-4096-9185-2d22366be66f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Base">
+      <UniqueIdentifier>{5e06707c-ae60-4a4e-9a63-20cb77095d09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CEGUI">
+      <UniqueIdentifier>{06c302e7-b275-4cb6-8fd8-7e3da56f4f0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Event">
+      <UniqueIdentifier>{35877c07-5955-4ec1-a598-cd1bc4140cc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Files">
+      <UniqueIdentifier>{9963873d-5a04-437d-bd2d-031b3ac4dabf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameEngine">
+      <UniqueIdentifier>{e5f97a1e-0d1c-49d5-bf6b-6bae6181854f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\LibJson">
+      <UniqueIdentifier>{9342c741-a713-4b21-b95c-2fdbeb2e71d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Map">
+      <UniqueIdentifier>{2264d5f1-da9e-4d8c-94b4-6520e897284c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PhysicEngine">
+      <UniqueIdentifier>{6f51fd09-4dcb-42b9-aa70-40defb4fa580}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Souce Files\Base">
+      <UniqueIdentifier>{d1b90092-c840-4a88-9daf-999c3ab4cb57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Souce Files\CEGUI">
+      <UniqueIdentifier>{36b0a557-5975-49d3-a65c-b6fd8da475ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Souce Files\Event">
+      <UniqueIdentifier>{55ad236e-01d5-40ae-ad84-676c4cc2aef4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Souce Files\Files">
+      <UniqueIdentifier>{b3b6016d-79dc-4223-8739-2e6b6ffadf54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Souce Files\GameEngine">
+      <UniqueIdentifier>{69e845f9-5189-44d7-927e-d49003a21cc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Souce Files\LibJson">
+      <UniqueIdentifier>{c0275a66-37a6-4c1f-a8bd-bf5b24503bac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Souce Files\Map">
+      <UniqueIdentifier>{805b9199-9c40-41c1-bcb9-9922b3d01aea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Souce Files\PhysicEngine">
+      <UniqueIdentifier>{8a6d690e-f10e-4119-9c23-7095cade2639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GUIEngine">
+      <UniqueIdentifier>{67e608ab-c000-49aa-874e-6ca51e219053}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Souce Files\GUIEngine">
+      <UniqueIdentifier>{1bfb81cc-5b51-440d-8de7-6c58a3042488}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\sources\shared\LibJson\inc\json_valueiterator.inl">
+      <Filter>Header Files\LibJson</Filter>
+    </None>
+  </ItemGroup>
+</Project>

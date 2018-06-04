@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Imageset autoScaled="vertical" imagefile="ClientIcons.png" name="ClientIcons" nativeHorzRes="512" nativeVertRes="512" version="2">
+    <Image name="ScoreboardEntryNormalGreen" width="198" height="15" xPos="2" yPos="2" />
+    <Image name="ScoreboardEntryHoverGreen" width="198" height="15" xPos="2" yPos="20" />
+    <Image name="ScoreboardEntryNormalRed" width="198" height="15" xPos="2" yPos="38" />
+    <Image name="ScoreboardEntryHoverRed" width="198" height="15" xPos="2" yPos="56" />
+    <Image name="ScoreboardEntryNormalBlack" width="198" height="15" xPos="2" yPos="74" />
+    <Image name="ScoreboardEntryNormalCurrentPlayer" width="198" height="15" xPos="2" yPos="92" />
+    <Image name="ScoreboardEntryHoverCurrentPlayer" width="198" height="15" xPos="2" yPos="110" />
+    <Image name="ScoreboardEntryNormalFFA" width="198" height="15" xPos="2" yPos="128" />
+    <Image name="ScoreboardEntryHoverFFA" width="198" height="15" xPos="2" yPos="146" />
+    <Image name="ScoreboardEntryNormalDead" width="198" height="15" xPos="2" yPos="164" />
+    <Image name="ScoreboardGameInfos" width="100" height="101" xPos="1" yPos="181" />
+    <Image name="Team1HeaderBackground" width="102" height="17" xPos="102" yPos="181" />
+    <Image name="Team2HeaderBackground" width="102" height="17" xPos="102" yPos="199" />
+    <Image name="FFAHeaderBackground" width="102" height="17" xPos="102" yPos="217" />
+    <Image name="ScoreboardLabels" width="198" height="15" xPos="2" yPos="283" />
+</Imageset>

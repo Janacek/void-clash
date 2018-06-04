@@ -1,0 +1,13 @@
+﻿Publish Central Server
+
+Right Click on Project
+
+Publish
+
+Import from Publish Profiles
+
+Void-clash > CentralServer > voidclash.azurewebsites.net.publishsettings
+
+Add database in Settings : Data Source=tcp:h3zfhn8vtg.database.windows.net,1433;Initial Catalog=VoidClash;Integrated Security=False;User ID=voidclash_admin@h3zfhn8vtg;Password=gegonIsBad33;Connect Timeout=30;Encrypt=True
+
+Check Run First Migrations if you modified database

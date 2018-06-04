@@ -1,0 +1,118 @@
+﻿<div id="body">
+    <h1>Servers List</h1>
+    <ul id="servers"></ul>
+    <input type="button" id="refreshServerList" value="Refresh" />
+</div>
+
+<form id="saveServerForm" method="post">
+    <h3>Create a new Server or Update an existing one (by ID)</h3>
+    <p>
+        <label for="serverId">Server Id:</label>
+        <input type="text" name="Id" />
+    </p>
+    <p>
+        <label for="serverName">Server Name:</label>
+        <input type="text" name="Name" />
+    </p>
+    <p>
+        <label for="serverMode">Server Mode:</label>
+        <input type="text" name="CurrentMode" />
+    </p>
+    <p>
+        <label for="serverPlayerNumber">Server PlayerNumber:</label>
+        <input type="number" name="PlayerNumber" />
+    </p>
+    <p>
+        <label for="serverMap">Server Map:</label>
+        <input type="text" name="CurrentMap" />
+    </p>
+    <input type="button" id="saveServer" value="Save" />
+    <input type="button" id="updateServer" value="Update" title="Update will find the server with the ID you provided and only change attributes you filled in the form" />
+</form>
+
+<h3>Delete server (by ID)</h3>
+<p>
+    <label for="ServerId">Server Id:</label>
+    <input id="deleteServerForm" type="text" name="Id" />
+</p>
+<input type="button" id="deleteServer" value="Delete" />
+
+@section scripts{
+    <script type="text/javascript">
+        $(function () {
+            $.getJSON('/api/server', function (contactsJsonPayload) {
+                $(contactsJsonPayload).each(function (i, item) {
+                    $('#servers').append('<li>' + item.Id + " : " + item.Name + " - " + item.CurrentMode + " - " + item.PlayerNumber + " - " + item.CurrentMap + " - " + item.IP + '</li>');
+                });
+            });
+        });
+        $('#refreshServerList').click(function () {
+            $('#servers').empty();
+            $.getJSON('/api/server', function (contactsJsonPayload) {
+                $(contactsJsonPayload).each(function (i, item) {
+                    $('#servers').append('<li>' + item.Id + " : " + item.Name + " - " + item.CurrentMode + " - " + item.PlayerNumber + " - " + item.CurrentMap + " - " + item.IP + '</li>');
+                });
+            });
+        });
+        $('#saveServer').click(function () {
+            $.post("/api/server",
+                  $("#saveServerForm").serialize(), null,
+                  "json"
+            );
+        });
+        $('#updateServer').click(function () {
+            $.ajax({
+                url: '/api/server',
+                type: 'PUT',
+                data: $("#saveServerForm").serialize()
+            }
+            );
+        });
+        $('#deleteServer').click(function () {
+            $.ajax({
+                url: '/api/server/' + $("#deleteServerForm").val(),
+                type: 'DELETE',
+                //data: $("#deleteServerForm").val()
+            }
+            );
+        });
+    </script>
+}
+
+@*<div id="body">
+        <ul id="contacts"></ul>
+    </div>
+
+    <form id="saveContactForm" method="post">
+        <h3>Create a new Contact</h3>
+        <p>
+            <label for="contactId">Contact Id:</label>
+            <input type="text" name="Id" />
+        </p>
+        <p>
+            <label for="contactName">Contact Name:</label>
+            <input type="text" name="Name" />
+        </p>
+        <input type="button" id="saveContact" value="Save" />
+    </form>
+
+    @section scripts{
+        <script type="text/javascript">
+            $(function () {
+                $.getJSON('/api/contact', function (contactsJsonPayload) {
+                    $(contactsJsonPayload).each(function (i, item) {
+                        $('#contacts').append('<li>' + item.Name + '</li>');
+                    });
+                });
+            });
+            $('#saveContact').click(function () {
+                $.post("/api/contact",
+                      $("#saveContactForm").serialize(),
+                      function (value) {
+                          $('#contacts').append('<li>' + value.Name + '</li>');
+                      },
+                      "json"
+                );
+            });
+        </script>
+    }*@

@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\AEntity.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\ChildManager.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\ComponentManager.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\EntityBomb.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\EntityBullet.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\EntityCapture.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\EntityFlag.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\EntityFlash.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\EntityGravity.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\EntityLight.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\EntityPlayer.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\EntityRespawn.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\EntitySpeedfield.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\EntityWall.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\Environment.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\FontManager.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\GraphicAim.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\GraphicConfiguration.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\GraphicCursor.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\GraphicDefines.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\GraphicEngine.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\GraphicHelper.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\GraphicHud.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\GraphicHudEntity.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\GraphicHudTop.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\GraphicHudWarmup.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\GraphicInGameMessage.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\GraphicKillReport.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\GraphicMinimap.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\GraphicRespawnCooldown.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\GraphicWeaponSelection.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\LoadingScreen.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\ModelManager.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\Module.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\ModuleFactory.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\OpenGLContext.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\Particle.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\ParticleSystem.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\ParticleSystemFactory.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\ParticleSystemModule.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\Scene.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\ShaderManager.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\Templates.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\inc\TextureManager.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GraphicEngine\src\Renderer.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\AEntity.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\ChildManager.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\ComponentManager.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\EntityBomb.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\EntityBullet.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\EntityCapture.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\EntityFlag.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\EntityFlash.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\EntityGravity.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\EntityLight.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\EntityPlayer.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\EntityPlayer_postRendering.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\EntityRespawn.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\EntitySpeedfield.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\EntityWall.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\Environment.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\FontManager.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\GraphicAim.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\GraphicConfiguration.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\GraphicCursor.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\GraphicEngine.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\GraphicHelper.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\GraphicHud.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\GraphicHudTop.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\GraphicHudWarmup.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\GraphicInGameMessage.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\GraphicKillReport.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\GraphicMinimap.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\GraphicRespawnCooldown.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\GraphicWeaponSelection.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\LoadingScreen.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\ModelManager.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\Module.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\ModuleFactory.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\OpenGLContext.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\Particle_core.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\ParticleSystem.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\ParticleSystemFactory.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\ParticleSystemModule.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\Particle_utils.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\Renderer.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\Scene.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\ShaderManager.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GraphicEngine\src\TextureManager.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EF578ED2-D0CE-4F53-91DB-B5676BF23642}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GraphicEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\..\dependencies\</OutDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)..\..\dependencies\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;GLEW_STATIC;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\sources\API;$(ProjectDir)..\..\..\dependencies\glm;$(ProjectDir)..\..\..\sources\shared\GraphicEngine\inc;$(ProjectDir)..\..\..\dependencies;$(ProjectDir)..\..\..\dependencies\SFML\inc;$(ProjectDir)..\..\..\sources\shared\GameEngine\inc;$(ProjectDir)..\..\..\sources\client\inc;$(ProjectDir)..\..\..\dependencies\Tinyxml;$(ProjectDir)..\..\..\sources\common\inc;$(ProjectDir)..\..\..\sources\shared\LibJson\inc;$(ProjectDir)..\..\..\sources\shared\Map\inc;$(ProjectDir)..\..\..\sources\shared\Event\inc;$(ProjectDir)\..\..\..\dependencies\cegui-0.8.4\cegui-0.8.4\cegui\include;$(ProjectDir)\..\..\..\dependencies\cegui-0.8.4\cegui-0.8.4\build\cegui\include;$(ProjectDir)\..\..\..\dependencies\cegui-0.8.4\cegui-0.8.4\dependencies\include;$(ProjectDir)..\..\..\dependencies\Assimp\inc;$(ProjectDir)..\..\..\sources\shared\PhysicEngine\inc;$(ProjectDir)..\..\..\dependencies\GL\;$(ProjectDir)..\..\..\sources\shared\Files\inc;$(ProjectDir)..\..\..\dependencies\GLFW</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4305;4244;4996;4800</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;GLEW_STATIC;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\sources\API;$(ProjectDir)..\..\..\dependencies\glm;$(ProjectDir)..\..\..\sources\shared\GraphicEngine\inc;$(ProjectDir)..\..\..\dependencies;$(ProjectDir)..\..\..\dependencies\SFML\inc;$(ProjectDir)..\..\..\sources\shared\GameEngine\inc;$(ProjectDir)..\..\..\sources\client\inc;$(ProjectDir)..\..\..\dependencies\Tinyxml;$(ProjectDir)..\..\..\sources\common\inc;$(ProjectDir)..\..\..\sources\shared\LibJson\inc;$(ProjectDir)..\..\..\sources\shared\Map\inc;$(ProjectDir)..\..\..\sources\shared\Event\inc;$(ProjectDir)\..\..\..\dependencies\cegui-0.8.4\cegui-0.8.4\cegui\include;$(ProjectDir)\..\..\..\dependencies\cegui-0.8.4\cegui-0.8.4\build\cegui\include;$(ProjectDir)\..\..\..\dependencies\cegui-0.8.4\cegui-0.8.4\dependencies\include;$(ProjectDir)..\..\..\dependencies\Assimp\inc;$(ProjectDir)..\..\..\sources\shared\PhysicEngine\inc;$(ProjectDir)..\..\..\dependencies\GL\;$(ProjectDir)..\..\..\sources\shared\Files\inc;$(ProjectDir)..\..\..\dependencies\GLFW</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4305;4244;4996;4800</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

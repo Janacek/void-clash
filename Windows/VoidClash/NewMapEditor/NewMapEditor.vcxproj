@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\sources\common\src\globals.cpp" />
+    <ClCompile Include="..\..\..\sources\common\src\HudRessources.cpp" />
+    <ClCompile Include="..\..\..\sources\NewMapEditor\src\CustomListBoxItem.cpp" />
+    <ClCompile Include="..\..\..\sources\NewMapEditor\src\GUICallbacks.cpp" />
+    <ClCompile Include="..\..\..\sources\NewMapEditor\src\GUIEngine.cpp" />
+    <ClCompile Include="..\..\..\sources\NewMapEditor\src\GUIManager.cpp" />
+    <ClCompile Include="..\..\..\sources\NewMapEditor\src\InputEngine.cpp" />
+    <ClCompile Include="..\..\..\sources\NewMapEditor\src\KeyParameters.cpp" />
+    <ClCompile Include="..\..\..\sources\NewMapEditor\src\main.cpp" />
+    <ClCompile Include="..\..\..\sources\NewMapEditor\src\Manager.cpp" />
+    <ClCompile Include="..\..\..\sources\NewMapEditor\src\MapData.cpp" />
+    <ClCompile Include="..\..\..\sources\NewMapEditor\src\SoundEngine.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\Event\src\Event.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\Event\src\EventContainer.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\Files\src\Files_unix.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\Files\src\Files_win32.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\Files\src\Log.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\AI.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\AObject.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\AWeapon.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Bomb.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Bot.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Bullet.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Capture.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Explosion.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Flag.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\GameEngine.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\GravityField.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Player.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Respawn.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Rocket.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\SpeedField.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Turret.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\Wall.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\GameEngine\src\WeaponManager.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\LibJson\src\ConfigParser.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\LibJson\src\json_reader.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\LibJson\src\json_value.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\LibJson\src\json_writer.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\LibJson\src\KeyPreferencesParser.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\LibJson\src\MapParser.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\LibJson\src\MapSaver.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\LibJson\src\Parser.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\Map\src\Map.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\Map\src\MapDatabase.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\Map\src\MapMode.cpp" />
+    <ClCompile Include="..\..\..\sources\shared\PhysicEngine\src\PhysicEngine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\sources\common\inc\AEngine.hpp" />
+    <ClInclude Include="..\..\..\sources\common\inc\Defines.h" />
+    <ClInclude Include="..\..\..\sources\common\inc\HudRessources.hpp" />
+    <ClInclude Include="..\..\..\sources\common\inc\main.hpp" />
+    <ClInclude Include="..\..\..\sources\NewMapEditor\inc\CustomListBoxItem.h" />
+    <ClInclude Include="..\..\..\sources\NewMapEditor\inc\GUICallbacks.h" />
+    <ClInclude Include="..\..\..\sources\NewMapEditor\inc\GUIEngine.h" />
+    <ClInclude Include="..\..\..\sources\NewMapEditor\inc\GUIManager.h" />
+    <ClInclude Include="..\..\..\sources\NewMapEditor\inc\InputEngine.hpp" />
+    <ClInclude Include="..\..\..\sources\NewMapEditor\inc\KeysParameters.h" />
+    <ClInclude Include="..\..\..\sources\NewMapEditor\inc\Manager.hpp" />
+    <ClInclude Include="..\..\..\sources\NewMapEditor\inc\MapData.h" />
+    <ClInclude Include="..\..\..\sources\NewMapEditor\inc\SoundEngine.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\Event\inc\Event.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\Event\inc\EventComponent.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\Event\inc\EventContainer.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\Files\inc\Files.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\Files\inc\Log.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Actions.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\AI.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\AObject.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Bomb.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Bot.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Bullet.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Capture.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Explosion.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Flag.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\GameEngine.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\GravityField.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\AWeapon.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Player.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Respawn.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Rocket.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\SpeedField.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Turret.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\Wall.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\GameEngine\inc\WeaponManager.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\autolink.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\config.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\ConfigParser.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\features.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\forwards.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\json.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\json_batchallocator.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\KeyPreferencesParser.h" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\MapParser.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\MapSaver.h" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\MapStructures.h" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\Parser.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\reader.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\value.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\LibJson\inc\writer.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\Map\inc\Map.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\Map\inc\MapDatabase.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\Map\inc\MapMode.hpp" />
+    <ClInclude Include="..\..\..\sources\shared\PhysicEngine\inc\PhysicEngine.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\sources\shared\LibJson\inc\json_valueiterator.inl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ACD5BF97-0B6D-4A24-A38D-13B21208EAA3}</ProjectGuid>
+    <RootNamespace>client</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>
+    </LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>
+    </LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\dependencies\SFML\inc;$(ProjectDir)..\..\..\sources\shared\Event\inc;$(ProjectDir)..\..\..\sources\shared\Files\inc;$(ProjectDir)..\..\..\sources\shared\GameEngine\inc;$(ProjectDir)..\..\..\sources\shared\GraphicEngine\inc;$(ProjectDir)..\..\..\sources\shared\LibJson\inc;$(ProjectDir)..\..\..\sources\shared\Map\inc;$(ProjectDir)..\..\..\sources\shared\PhysicEngine\inc;$(ProjectDir)..\..\..\sources\common\inc;$(ProjectDir)..\..\..\sources\NewMapEditor\inc;$(ProjectDir)..\..\..\sources\API;$(ProjectDir)..\..\..\dependencies;$(ProjectDir)..\..\..\dependencies\glm;$(ProjectDir)\..\..\..\dependencies\cegui-0.8.4\cegui-0.8.4\cegui\include;$(ProjectDir)\..\..\..\dependencies\cegui-0.8.4\cegui-0.8.4\build\cegui\include;$(ProjectDir)\..\..\..\dependencies\cegui-0.8.4\cegui-0.8.4\dependencies\include;$(ProjectDir)..\..\..\dependencies\Tinyxml;$(ProjectDir)..\..\..\dependencies\Assimp\inc</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;_CRT_SECURE_NO_WARNINGS;GLEW_STATIC;VOIDCLASH_EDITOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <DisableSpecificWarnings>4305;4244;4996;4800</DisableSpecificWarnings>
+      <CompileAsManaged>false</CompileAsManaged>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\dependencies\SFML\libs;$(ProjectDir)..\..\..\dependencies;$(ProjectDir)..\..\..\dependencies\Tinyxml;$(ProjectDir)\..\..\..\dependencies\cegui-0.8.4\cegui-0.8.4\build\lib;$(ProjectDir)\..\..\..\dependencies\cegui-0.8.4\cegui-0.8.4\dependencies\lib;$(ProjectDir)..\..\..\dependencies\SOIL\lib;%(AdditionalLibraryDirectories);$(ProjectDir)..\..\..\dependencies\Assimp\lib;$(ProjectDir)..\..\..\dependencies\Freetype\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-audio-d.lib;sfml-graphics-d.lib;sfml-network-d.lib;sfml-window-d.lib;sfml-system-d.lib;CEGUIOpenGLRenderer-0_d.lib;CEGUIBase-0_d.lib;GraphicEngined.lib;oglGraphicd.lib;glew32s.lib;opengl32.lib;tinyxml.lib;SOIL.lib;assimpd.lib;freetype.lib;Comdlg32.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <Profile>true</Profile>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\dependencies\SFML\inc;$(ProjectDir)..\..\..\sources\shared\Event\inc;$(ProjectDir)..\..\..\sources\shared\Files\inc;$(ProjectDir)..\..\..\sources\shared\GameEngine\inc;$(ProjectDir)..\..\..\sources\shared\GraphicEngine\inc;$(ProjectDir)..\..\..\sources\shared\LibJson\inc;$(ProjectDir)..\..\..\sources\shared\Map\inc;$(ProjectDir)..\..\..\sources\shared\PhysicEngine\inc;$(ProjectDir)..\..\..\sources\common\inc;$(ProjectDir)..\..\..\sources\NewMapEditor\inc;$(ProjectDir)..\..\..\sources\API;$(ProjectDir)..\..\..\dependencies;$(ProjectDir)..\..\..\dependencies\glm;$(ProjectDir)\..\..\..\dependencies\cegui-0.8.4\cegui-0.8.4\cegui\include;$(ProjectDir)\..\..\..\dependencies\cegui-0.8.4\cegui-0.8.4\build\cegui\include;$(ProjectDir)\..\..\..\dependencies\cegui-0.8.4\cegui-0.8.4\dependencies\include;$(ProjectDir)..\..\..\dependencies\Tinyxml;$(ProjectDir)..\..\..\dependencies\Assimp\inc</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;_CRT_SECURE_NO_WARNINGS;GLEW_STATIC;VOIDCLASH_EDITOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <DisableSpecificWarnings>4305;4244;4996;4800</DisableSpecificWarnings>
+      <CompileAsManaged>false</CompileAsManaged>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\dependencies\SFML\libs;$(ProjectDir)..\..\..\dependencies;$(ProjectDir)..\..\..\dependencies\Tinyxml;$(ProjectDir)\..\..\..\dependencies\cegui-0.8.4\cegui-0.8.4\dependencies\lib;$(ProjectDir)\..\..\..\dependencies\cegui-0.8.4\cegui-0.8.4\build\lib;$(ProjectDir)..\..\..\dependencies\SOIL\lib;%(AdditionalLibraryDirectories);$(ProjectDir)..\..\..\dependencies\Assimp\lib;$(ProjectDir)..\..\..\dependencies\Freetype\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-audio.lib;sfml-graphics.lib;sfml-network.lib;sfml-window.lib;sfml-system.lib;CEGUIOpenGLRenderer-0.lib;CEGUIBase-0.lib;GraphicEngine.lib;glew32s.lib;oglGraphic.lib;opengl32.lib;tinyxml.lib;SOIL.lib;assimp.lib;freetype.lib;Comdlg32.lib;Comdlg32.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>COPY $(SolutionDir)\Release\NewMapEditor.exe $(ProjectDir)..\..\..\Installer\Windows\
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

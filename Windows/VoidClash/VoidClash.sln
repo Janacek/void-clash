@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "client", "client\client.vcxproj", "{F179627C-6081-4A66-84C9-F83CD9ACC3DA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EF578ED2-D0CE-4F53-91DB-B5676BF23642} = {EF578ED2-D0CE-4F53-91DB-B5676BF23642}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "server", "server\server.vcxproj", "{0921490E-7CBD-4543-866E-9DD6F1653CD9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "oglGraphic", "oglGraphic\oglGraphic.vcxproj", "{0A679D3B-3B28-439C-AA2E-803C9145FA0D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GraphicEngine", "GraphicEngine\GraphicEngine.vcxproj", "{EF578ED2-D0CE-4F53-91DB-B5676BF23642}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0A679D3B-3B28-439C-AA2E-803C9145FA0D} = {0A679D3B-3B28-439C-AA2E-803C9145FA0D}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4B774EDB-E53E-4404-8349-9013C67BAD54}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Installer\config.json = ..\..\Installer\config.json
+		..\..\Installer\configClient.json = ..\..\Installer\configClient.json
+		..\..\sources\common\inc\Defines.h = ..\..\sources\common\inc\Defines.h
+		..\..\Installer\Windows\Graphic.log = ..\..\Installer\Windows\Graphic.log
+		..\..\Installer\GraphicConfig.xml = ..\..\Installer\GraphicConfig.xml
+		..\..\Installer\Windows\keysPreferences.json = ..\..\Installer\Windows\keysPreferences.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Maps", "Maps", "{11DBC3FA-477C-47BF-A2AC-3BFD10AE364A}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Installer\Windows\maps\map.json = ..\..\Installer\Windows\maps\map.json
+		..\..\Installer\maps\simple.json = ..\..\Installer\maps\simple.json
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "VoidClashSetupWizard", "VoidClashSetupWizard\VoidClashSetupWizard.vdproj", "{BF2281B4-A719-45E3-8697-2224B3E0D147}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|ARM = Release|ARM
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F179627C-6081-4A66-84C9-F83CD9ACC3DA}.Debug|ARM.ActiveCfg = Debug|Win32
+		{F179627C-6081-4A66-84C9-F83CD9ACC3DA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F179627C-6081-4A66-84C9-F83CD9ACC3DA}.Debug|Win32.Build.0 = Debug|Win32
+		{F179627C-6081-4A66-84C9-F83CD9ACC3DA}.Debug|x64.ActiveCfg = Debug|Win32
+		{F179627C-6081-4A66-84C9-F83CD9ACC3DA}.Release|ARM.ActiveCfg = Release|Win32
+		{F179627C-6081-4A66-84C9-F83CD9ACC3DA}.Release|Win32.ActiveCfg = Release|Win32
+		{F179627C-6081-4A66-84C9-F83CD9ACC3DA}.Release|Win32.Build.0 = Release|Win32
+		{F179627C-6081-4A66-84C9-F83CD9ACC3DA}.Release|x64.ActiveCfg = Release|Win32
+		{0921490E-7CBD-4543-866E-9DD6F1653CD9}.Debug|ARM.ActiveCfg = Debug|Win32
+		{0921490E-7CBD-4543-866E-9DD6F1653CD9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0921490E-7CBD-4543-866E-9DD6F1653CD9}.Debug|Win32.Build.0 = Debug|Win32
+		{0921490E-7CBD-4543-866E-9DD6F1653CD9}.Debug|x64.ActiveCfg = Debug|Win32
+		{0921490E-7CBD-4543-866E-9DD6F1653CD9}.Release|ARM.ActiveCfg = Release|Win32
+		{0921490E-7CBD-4543-866E-9DD6F1653CD9}.Release|Win32.ActiveCfg = Release|Win32
+		{0921490E-7CBD-4543-866E-9DD6F1653CD9}.Release|Win32.Build.0 = Release|Win32
+		{0921490E-7CBD-4543-866E-9DD6F1653CD9}.Release|x64.ActiveCfg = Release|Win32
+		{0A679D3B-3B28-439C-AA2E-803C9145FA0D}.Debug|ARM.ActiveCfg = Debug|Win32
+		{0A679D3B-3B28-439C-AA2E-803C9145FA0D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0A679D3B-3B28-439C-AA2E-803C9145FA0D}.Debug|Win32.Build.0 = Debug|Win32
+		{0A679D3B-3B28-439C-AA2E-803C9145FA0D}.Debug|x64.ActiveCfg = Debug|Win32
+		{0A679D3B-3B28-439C-AA2E-803C9145FA0D}.Release|ARM.ActiveCfg = Release|Win32
+		{0A679D3B-3B28-439C-AA2E-803C9145FA0D}.Release|Win32.ActiveCfg = Release|Win32
+		{0A679D3B-3B28-439C-AA2E-803C9145FA0D}.Release|Win32.Build.0 = Release|Win32
+		{0A679D3B-3B28-439C-AA2E-803C9145FA0D}.Release|x64.ActiveCfg = Release|Win32
+		{EF578ED2-D0CE-4F53-91DB-B5676BF23642}.Debug|ARM.ActiveCfg = Debug|Win32
+		{EF578ED2-D0CE-4F53-91DB-B5676BF23642}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EF578ED2-D0CE-4F53-91DB-B5676BF23642}.Debug|Win32.Build.0 = Debug|Win32
+		{EF578ED2-D0CE-4F53-91DB-B5676BF23642}.Debug|x64.ActiveCfg = Debug|Win32
+		{EF578ED2-D0CE-4F53-91DB-B5676BF23642}.Release|ARM.ActiveCfg = Release|Win32
+		{EF578ED2-D0CE-4F53-91DB-B5676BF23642}.Release|Win32.ActiveCfg = Release|Win32
+		{EF578ED2-D0CE-4F53-91DB-B5676BF23642}.Release|Win32.Build.0 = Release|Win32
+		{EF578ED2-D0CE-4F53-91DB-B5676BF23642}.Release|x64.ActiveCfg = Release|Win32
+		{BF2281B4-A719-45E3-8697-2224B3E0D147}.Debug|ARM.ActiveCfg = Debug
+		{BF2281B4-A719-45E3-8697-2224B3E0D147}.Debug|Win32.ActiveCfg = Debug
+		{BF2281B4-A719-45E3-8697-2224B3E0D147}.Debug|x64.ActiveCfg = Debug
+		{BF2281B4-A719-45E3-8697-2224B3E0D147}.Release|ARM.ActiveCfg = Release
+		{BF2281B4-A719-45E3-8697-2224B3E0D147}.Release|Win32.ActiveCfg = Release
+		{BF2281B4-A719-45E3-8697-2224B3E0D147}.Release|x64.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{11DBC3FA-477C-47BF-A2AC-3BFD10AE364A} = {4B774EDB-E53E-4404-8349-9013C67BAD54}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="DefaultWindow" name="root" >
+        <Property name="Area" value="{{0.000625,0},{0,0},{1.00063,0},{1,0}}" />
+            <Window type="GlossySerpentFHD/FrameWindow" name="WeaponSelectionWindow" >
+                <Property name="Area" value="{{0.0749218,-3},{0.0982713,0},{0.942701,-3},{0.898694,0}}" />
+                <Property name="Text" value="SELECTION ARMES" />
+                <Property name="Visible" value="false" />
+                <Property name="RollUpEnabled" value="false" />
+                <Property name="TitlebarEnabled" value="false" />
+                <Property name="CloseButtonEnabled" value="false" />
+                <Property name="AutoRenderingSurface" value="true" />
+                <AutoWindow namePath="__auto_titlebar__" >
+                    <Property name="NonClient" value="true" />
+                    <Property name="AlwaysOnTop" value="false" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_closebutton__" >
+                    <Property name="NonClient" value="true" />
+                    <Property name="AlwaysOnTop" value="true" />
+                </AutoWindow>
+                <Window type="GlossySerpentFHD/Button" name="Weapon2Button" >
+                    <Property name="Area" value="{{0.0895866,0},{0.417761,0},{0.266439,0},{0.56823,0}}" />
+                    <Property name="Text" value="Arme 2" />
+                    <Property name="NormalTextColour" value="FFB4DC25" />
+                </Window>
+                <Window type="GlossySerpentFHD/Button" name="Weapon1Button" >
+                    <Property name="Area" value="{{0.0895573,0},{0.180662,0},{0.268576,0},{0.330048,0}}" />
+                    <Property name="Text" value="Arme 1" />
+                    <Property name="NormalTextColour" value="FFB4DC25" />
+                </Window>
+                <Window type="GlossySerpentFHD/Button" name="BulletButton" >
+                    <Property name="Area" value="{{0.353705,-8},{0.121241,-3},{0.586141,-11},{0.201347,-3}}" />
+                    <Property name="Text" value="TIRS" />
+                    <Property name="NormalTextColour" value="FFB4DC25" />
+                </Window>
+                <Window type="GlossySerpentFHD/Button" name="BombButton" >
+                    <Property name="Area" value="{{0.353705,-9},{0.289031,0},{0.586141,-11},{0.364806,0}}" />
+                    <Property name="Text" value="BOMBES" />
+                    <Property name="NormalTextColour" value="FFB4DC25" />
+                </Window>
+                <Window type="GlossySerpentFHD/Button" name="GravityButton" >
+                    <Property name="Area" value="{{0.353705,-9},{0.464397,-1},{0.586141,-11},{0.540173,-1}}" />
+                    <Property name="Text" value="CHAMPS DE GRAVITE" />
+                    <Property name="NormalTextColour" value="FFB4DC25" />
+                </Window>
+                <Window type="GlossySerpentFHD/Button" name="TurretButton" >
+                    <Property name="Area" value="{{0.353705,-8},{0.623527,1},{0.586141,-11},{0.697137,1}}" />
+                    <Property name="Text" value="TOURELLES" />
+                    <Property name="NormalTextColour" value="FFB4DC25" />
+                </Window>
+                <Window type="GlossySerpentFHD/Button" name="ShieldButton" >
+                    <Property name="Area" value="{{0.353705,-8},{0.779408,-1},{0.586141,-10},{0.855184,-1}}" />
+                    <Property name="Text" value="BOUCLIERS" />
+                    <Property name="NormalTextColour" value="FFB4DC25" />
+                </Window>
+			   <Window type="GlossySerpentFHD/StaticText" name="WeaponListLabel" >
+					<Property name="Area" value="{{0.67204,0},{0.535842,0},{0.925409,0},{0.60,0}}" />
+					<Property name="Text" value="LISTE DES ARMES" />
+					<Property name="MaxSize" value="{{1,0},{1,0}}" />
+					<Property name="FrameEnabled" value="true" />
+					<Property name="HorzFormatting" value="CentreAligned" />
+					<Property name="BackgroundEnabled" value="true" />
+					<AutoWindow namePath="__auto_vscrollbar__" >
+						<Property name="VerticalScrollbar" value="true" />
+					</AutoWindow>
+				</Window>
+                <Window type="GlossySerpentFHD/Listbox" name="WeaponList" >
+                    <Property name="Area" value="{{0.67204,0},{0.595842,0},{0.925409,0},{0.870338,0}}" />
+                    <Property name="Text" value="Liste des armes" />
+                    <AutoWindow namePath="__auto_vscrollbar__" >
+                        <Property name="VerticalScrollbar" value="true" />
+                    </AutoWindow>
+                </Window>
+			   <Window type="GlossySerpentFHD/StaticText" name="WeaponAttributesLabel" >
+					<Property name="Area" value="{{0.672762,0},{0.119756,0},{0.925409,0},{0.188,0}}" />
+					<Property name="Text" value="DESCRIPTION ARME" />
+					<Property name="MaxSize" value="{{1,0},{1,0}}" />
+					<Property name="FrameEnabled" value="true" />
+					<Property name="HorzFormatting" value="CentreAligned" />
+					<Property name="BackgroundEnabled" value="true" />
+					<AutoWindow namePath="__auto_vscrollbar__" >
+						<Property name="VerticalScrollbar" value="true" />
+					</AutoWindow>
+				</Window>
+				<Window type="GlossySerpentFHD/MultiLineEditbox" name="WeaponAttributes" >
+                    <Property name="Area" value="{{0.672762,0},{0.181756,0},{0.925409,0},{0.495275,0}}" />
+                    <Property name="ReadOnly" value="true" />
+                    <AutoWindow namePath="__auto_vscrollbar__" >
+                        <Property name="VerticalScrollbar" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="GlossySerpentFHD/Button32_4C" name="WeaponValidate" >
+                    <Property name="Area" value="{{0.0895866,0},{0.661326,88},{0.266439,0},{0.811795,41}}" />
+                    <Property name="Text" value="OK" />
+					<Property name="NormalTextColour" value="FFF05004" />
+                </Window>
+            </Window>
+            <Window type="GlossySerpentFHD/FrameWindow" name="Menus" >
+            <Property name="Area" value="{{0.389375,0},{0.196666,0},{0.619375,0},{0.787499,0}}" />
+            <Property name="Text" value="Menus" />
+            <Property name="Visible" value="false" />
+            <Property name="RollUpEnabled" value="false" />
+            <Property name="SizingEnabled" value="false" />
+            <Property name="TitlebarEnabled" value="false" />
+            <Property name="DragMovingEnabled" value="false" />
+            <Property name="CloseButtonEnabled" value="false" />
+            <Property name="AutoRenderingSurface" value="true" />
+            <AutoWindow namePath="__auto_titlebar__" >
+                <Property name="NonClient" value="true" />
+                <Property name="AlwaysOnTop" value="false" />
+                <Property name="DraggingEnabled" value="false" />
+            </AutoWindow>
+            <AutoWindow namePath="__auto_closebutton__" >
+                <Property name="NonClient" value="true" />
+                <Property name="AlwaysOnTop" value="true" />
+            </AutoWindow>
+            <Window type="GlossySerpentFHD/Button" name="WeaponSelectionButton" >
+                <Property name="Area" value="{{0.121761,0},{0.212558,0},{0.861524,0},{0.296035,0}}" />
+                <Property name="Text" value="SELECTION ARME" />
+                <Property name="NormalTextColour" value="FFB4DC25" />
+            </Window>
+            <Window type="GlossySerpentFHD/Button" name="ServerAdministrationButton" >
+                <Property name="Area" value="{{0.12214,0},{0.345599,0},{0.859174,0},{0.424832,0}}" />
+                <Property name="Text" value="ADMINISTRATION SERVEUR" />
+                <Property name="NormalTextColour" value="FFB4DC25" />
+            </Window>
+            <Window type="GlossySerpentFHD/Button32_4C" name="QuitMenusButton" >
+                <Property name="Area" value="{{0.130996,0},{0.86066,0},{0.86803,0},{0.937063,0}}" />
+                <Property name="Text" value="QUITTER" />
+                <Property name="NormalTextColour" value="FFF05004" />
+            </Window>
+            <Window type="GlossySerpentFHD/Button" name="ResumeMenusButton" >
+                <Property name="Area" value="{{0.120262,0},{0.732417,0},{0.857296,0},{0.810235,0}}" />
+                <Property name="Text" value="RETOUR" />
+                <Property name="NormalTextColour" value="FFB4DC25" />
+            </Window>
+            <Window type="GlossySerpentFHD/StaticText" name="GameSettingsStaticText" >
+                <Property name="Area" value="{{0.245902,0},{0.0473684,0},{0.748177,0},{0.125186,0}}" />
+                <Property name="Text" value="OPTIONS DU JEU" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="false" />
+                <Property name="HorzFormatting" value="CentreAligned" />
+                <Property name="BackgroundEnabled" value="false" />
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <Property name="VerticalScrollbar" value="true" />
+                </AutoWindow>
+            </Window>
+            <Window type="GlossySerpentFHD/Button" name="ChangeTeamButton" >
+                <Property name="Area" value="{{0.120109,0},{0.602848,0},{0.857143,0},{0.683496,0}}" />
+                <Property name="Text" value="CHOIX D'EQUIPE" />
+                <Property name="NormalTextColour" value="FFB4DC25" />
+            </Window>
+            <Window type="GlossySerpentFHD/Button" name="OptionsButton" >
+                <Property name="Area" value="{{0.11738,0},{0.469178,0},{0.857143,0},{0.552655,0}}" />
+                <Property name="Text" value="OPTIONS" />
+                <Property name="NormalTextColour" value="FFB4DC25" />
+            </Window>
+        </Window>
+        <Window type="GlossySerpentFHD/FrameWindow" name="KeysSelectionWindow" >
+            <Property name="Area" value="{{0.25,0},{0.125,0},{0.75,0},{0.875,0}}" />
+            <Property name="Text" value="Key selection" />
+            <Property name="Visible" value="false" />
+            <Property name="RollUpEnabled" value="false" />
+            <Property name="SizingEnabled" value="false" />
+            <Property name="TitlebarEnabled" value="false" />
+            <Property name="DragMovingEnabled" value="false" />
+            <Property name="CloseButtonEnabled" value="false" />
+            <Property name="AutoRenderingSurface" value="true" />
+            <AutoWindow namePath="__auto_titlebar__" >
+                <Property name="NonClient" value="true" />
+                <Property name="AlwaysOnTop" value="false" />
+                <Property name="DraggingEnabled" value="false" />
+            </AutoWindow>
+            <AutoWindow namePath="__auto_closebutton__" >
+                <Property name="NonClient" value="true" />
+                <Property name="AlwaysOnTop" value="true" />
+            </AutoWindow>
+            <Window type="GlossySerpentFHD/Listbox" name="KeysListbox" >
+                <Property name="Area" value="{{0.05,0},{0.05,0},{0.850417,0},{0.849752,0}}" />
+                <Property name="Text" value="Keys Preferencess" />
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <Property name="VerticalScrollbar" value="true" />
+                </AutoWindow>
+            </Window>
+            <Window type="GlossySerpentFHD/Button" name="ValidateKeyConfigurationButton" >
+                <Property name="Area" value="{{0.05,0},{0.9,0},{0.200313,0},{0.974629,0}}" />
+                <Property name="Text" value="SAVE" />
+                <Property name="HoverTextColour" value="FFB4DC25" />
+                <Property name="PushedTextColour" value="FFB4DC25" />
+            </Window>
+        </Window>
+		<Window type="GlossySerpentFHD/FrameWindow" name="AdministrationWindow" >
+			<Property name="Area" value="{{0.389375,0},{0.196666,1},{0.619375,0},{0.787499,1}}" />
+			<Property name="TitlebarEnabled" value="false" />
+			<Property name="CloseButtonEnabled" value="false" />
+			<Window type="GlossySerpentFHD/StaticText" name="AdministrationWindowLabel" >
+				<Property name="Area" value="{{0.2,0},{0.1,0},{0.8,0},{0.2,0}}" />
+				<Property name="Text" value="OPTIONS SERVEUR" />
+				<Property name="MaxSize" value="{{1,0},{1,0}}" />
+				<Property name="FrameEnabled" value="false" />
+				<Property name="HorzFormatting" value="CentreAligned" />
+				<Property name="BackgroundEnabled" value="false" />
+				<AutoWindow namePath="__auto_vscrollbar__" >
+					<Property name="VerticalScrollbar" value="true" />
+				</AutoWindow>
+			</Window>
+			<Window type="GlossySerpentFHD/Button" name="ChangeMapAdminButton" >
+				<Property name="Area" value="{{0.2,0},{0.3,0},{0.8,0},{0.4,0}}" />
+				<Property name="Text" value="CHANGEMENT DE MAP" />
+                <Property name="NormalTextColour" value="FFB4DC25" />
+			</Window>
+			<Window type="GlossySerpentFHD/Button" name="ChangeMapModeAdminButton" >
+				<Property name="Area" value="{{0.2,0},{0.45,0},{0.8,0},{0.55,0}}" />
+				<Property name="Text" value="CHANGEMENT DE MODE" />
+                <Property name="NormalTextColour" value="FFB4DC25" />
+			</Window>
+			<Window type="GlossySerpentFHD/Button32_4C" name="ValidateButton" >
+				<Property name="Area" value="{{0.2,0},{0.8,0},{0.8,0},{0.9,0}}" />
+				<Property name="Text" value="OK" />
+                <Property name="NormalTextColour" value="FFF05004" />
+			</Window>
+			<Window type="GlossySerpentFHD/Button" name="KickBanAdminButton" >
+				<Property name="Area" value="{{0.2,0},{0.6,0},{0.8,0},{0.7,0}}" />
+				<Property name="Text" value="KICK / BAN JOUEUR" />
+				<Property name="Disabled" value="true" />
+			</Window>
+		</Window>
+        <Window type="GlossySerpentFHD/FrameWindow" name="ChangeMapAdminWindow" >
+            <Property name="Area" value="{{0.25,0},{0.125,0},{0.75,0},{0.875,0}}" />
+            <Property name="Text" value="Change Map" />
+            <Property name="Visible" value="false" />
+            <Property name="RollUpEnabled" value="false" />
+            <Property name="SizingEnabled" value="false" />
+            <Property name="TitlebarEnabled" value="false" />
+            <Property name="DragMovingEnabled" value="false" />
+            <Property name="CloseButtonEnabled" value="false" />
+            <Property name="AutoRenderingSurface" value="true" />
+            <AutoWindow namePath="__auto_titlebar__" >
+                <Property name="NonClient" value="true" />
+                <Property name="AlwaysOnTop" value="false" />
+                <Property name="DraggingEnabled" value="false" />
+            </AutoWindow>
+            <AutoWindow namePath="__auto_closebutton__" >
+                <Property name="NonClient" value="true" />
+                <Property name="AlwaysOnTop" value="true" />
+            </AutoWindow>
+            <Window type="GlossySerpentFHD/Listbox" name="MapsListBox" >
+                <Property name="Area" value="{{0.05,0},{0.05,0},{0.85,0},{0.85,0}}" />
+                <Property name="Text" value="Available Maps" />
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <Property name="VerticalScrollbar" value="true" />
+                </AutoWindow>
+            </Window>
+            <Window type="GlossySerpentFHD/Button" name="ChangeMapAdminWindowButton" >
+                <Property name="Area" value="{{0.6,0},{0.88,0},{0.9,0},{0.98,0}}" />
+                <Property name="Text" value="Changer carte" />
+                <Property name="HoverTextColour" value="FFB4DC25" />
+                <Property name="PushedTextColour" value="FFB4DC25" />
+            </Window>
+        </Window>
+        <Window type="GlossySerpentFHD/FrameWindow" name="ChangeMapModeAdminWindow" >
+            <Property name="Area" value="{{0.25,0},{0.125,0},{0.75,0},{0.875,0}}" />
+            <Property name="Text" value="Changer mode de jeu" />
+            <Property name="Visible" value="false" />
+            <Property name="RollUpEnabled" value="false" />
+            <Property name="SizingEnabled" value="false" />
+            <Property name="TitlebarEnabled" value="false" />
+            <Property name="DragMovingEnabled" value="false" />
+            <Property name="CloseButtonEnabled" value="false" />
+            <Property name="AutoRenderingSurface" value="true" />
+            <AutoWindow namePath="__auto_titlebar__" >
+                <Property name="NonClient" value="true" />
+                <Property name="AlwaysOnTop" value="false" />
+                <Property name="DraggingEnabled" value="false" />
+            </AutoWindow>
+            <AutoWindow namePath="__auto_closebutton__" >
+                <Property name="NonClient" value="true" />
+                <Property name="AlwaysOnTop" value="true" />
+            </AutoWindow>
+            <Window type="GlossySerpentFHD/Listbox" name="MapModesListBox" >
+                <Property name="Area" value="{{0.05,0},{0.05,0},{0.85,0},{0.85,0}}" />
+                <Property name="Text" value="Modes disponibles" />
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <Property name="VerticalScrollbar" value="true" />
+                </AutoWindow>
+            </Window>
+            <Window type="GlossySerpentFHD/StaticText" name="ChangeMapModeHordeText" >
+                <Property name="Area" value="{{0.2,0},{0.88,0},{0.5,0},{0.98,0}}" />
+                <Property name="Text" value="Horde" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="true" />
+                <Property name="BackgroundEnabled" value="true" />
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <Property name="VerticalScrollbar" value="true" />
+                </AutoWindow>
+                <Window type="GlossySerpentFHD/Checkbox" name="ChangeMapModeHordeCheckbox" >
+                    <Property name="Area" value="{{0.75,0},{0,0},{1.75,0},{1,0}}" />
+                </Window>
+            </Window>
+            <Window type="GlossySerpentFHD/Button" name="ChangeMapModeAdminWindowButton" >
+                <Property name="Area" value="{{0.6,0},{0.88,0},{0.9,0},{0.98,0}}" />
+                <Property name="Text" value="Changer mode" />
+                <Property name="HoverTextColour" value="FFB4DC25" />
+                <Property name="PushedTextColour" value="FFB4DC25" />
+            </Window>
+        </Window>
+        <Window type="GlossySerpentFHD/FrameWindow" name="KickBanPlayerAdminWindow" >
+            <Property name="Area" value="{{0.25,0},{0.125,0},{0.75,0},{0.875,0}}" />
+            <Property name="Text" value="Kick / Ban joueur" />
+            <Property name="Visible" value="false" />
+            <Property name="RollUpEnabled" value="false" />
+            <Property name="SizingEnabled" value="false" />
+            <Property name="TitlebarEnabled" value="false" />
+            <Property name="DragMovingEnabled" value="false" />
+            <Property name="CloseButtonEnabled" value="false" />
+            <Property name="AutoRenderingSurface" value="true" />
+            <AutoWindow namePath="__auto_titlebar__" >
+                <Property name="NonClient" value="true" />
+                <Property name="AlwaysOnTop" value="false" />
+                <Property name="DraggingEnabled" value="false" />
+            </AutoWindow>
+            <AutoWindow namePath="__auto_closebutton__" >
+                <Property name="NonClient" value="true" />
+                <Property name="AlwaysOnTop" value="true" />
+            </AutoWindow>
+            <Window type="GlossySerpentFHD/Listbox" name="PlayersAdmListBox" >
+                <Property name="Area" value="{{0.05,0},{0.05,0},{0.85,0},{0.85,0}}" />
+                <Property name="Text" value="Joueurs" />
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <Property name="VerticalScrollbar" value="true" />
+                </AutoWindow>
+            </Window>
+            <Window type="GlossySerpentFHD/Button" name="CloseKickBanPlayerAdminWindowButton" >
+                <Property name="Area" value="{{0.6,0},{0.88,0},{0.9,0},{0.98,0}}" />
+                <Property name="Text" value="Fermer" />
+                <Property name="HoverTextColour" value="FFB4DC25" />
+                <Property name="PushedTextColour" value="FFB4DC25" />
+            </Window>
+            <Window type="GlossySerpentFHD/Button" name="KickPlayerButton" >
+                <Property name="Area" value="{{0.1,0},{0.88,0},{0.25,0},{0.98,0}}" />
+                <Property name="Text" value="Exclure" />
+                <Property name="HoverTextColour" value="FFB4DC25" />
+                <Property name="PushedTextColour" value="FFB4DC25" />
+            </Window>
+            <Window type="GlossySerpentFHD/Button" name="BanPlayerButton" >
+                <Property name="Area" value="{{0.35,0},{0.88,0},{0.5,0},{0.98,0}}" />
+                <Property name="Text" value="Ban" />
+                <Property name="HoverTextColour" value="FFB4DC25" />
+                <Property name="PushedTextColour" value="FFB4DC25" />
+            </Window>
+        </Window>
+        <Window type="GlossySerpentFHD/FrameWindow" name="SelectTeamWindow" >
+            <Property name="Area" value="{{0.15,0},{0.1,0},{0.85,0},{0.9,0}}" />
+            <Property name="Text" value="Fin de la manche" />
+            <Property name="RollUpEnabled" value="false" />
+            <Property name="SizingEnabled" value="false" />
+            <Property name="TitlebarEnabled" value="false" />
+            <Property name="DragMovingEnabled" value="false" />
+            <Property name="CloseButtonEnabled" value="false" />
+            <Property name="AutoRenderingSurface" value="true" />
+                <Property name="Visible" value="false" />
+            <AutoWindow namePath="__auto_titlebar__" >
+                <Property name="NonClient" value="true" />
+                <Property name="AlwaysOnTop" value="false" />
+                <Property name="DraggingEnabled" value="false" />
+            </AutoWindow>
+            <AutoWindow namePath="__auto_closebutton__" >
+                <Property name="NonClient" value="true" />
+                <Property name="AlwaysOnTop" value="true" />
+            </AutoWindow>
+            <Window type="GlossySerpentFHD/StaticText" name="SelectTeamStaticText" >
+                <Property name="Area" value="{{0.4,0},{0.1,0},{0.6,0},{0.2,0}}" />
+                <Property name="Text" value="Sélection des équipes" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="false" />
+                <Property name="BackgroundEnabled" value="false" />
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <Property name="VerticalScrollbar" value="true" />
+                </AutoWindow>
+            </Window>
+            <Window type="GlossySerpentFHD/Button" name="PlayersTeamOneButton" >
+                <Property name="Area" value="{{0.1,0},{0.3,0},{0.45,0},{0.8,0}}" />
+                <Window type="GlossySerpentFHD/StaticText" name="PlayersTeamOneStaticText" >
+                    <Property name="Area" value="{{0.35,0},{0,0},{0.65,0},{0.2,0}}" />
+                    <Property name="Text" value="Equipe une" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="FrameEnabled" value="false" />
+                    <Property name="BackgroundEnabled" value="false" />
+                    <Property name="MousePassThroughEnabled" value="true" />
+                    <Property name="MouseInputPropagationEnabled" value="true" />
+                    <AutoWindow namePath="__auto_vscrollbar__" >
+                        <Property name="VerticalScrollbar" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="GlossySerpentFHD/StaticText" name="PlayersTeamOneHoverStaticText" >
+                    <Property name="Area" value="{{0.25,0},{0,0},{0.85,0},{0.2,0}}" />
+                    <Property name="Text" value="Cliquer pour rejoindre l'équipe une" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="Visible" value="false" />
+                    <Property name="FrameEnabled" value="false" />
+                    <Property name="BackgroundEnabled" value="false" />
+                    <Property name="MousePassThroughEnabled" value="true" />
+                    <Property name="MouseInputPropagationEnabled" value="true" />
+                    <AutoWindow namePath="__auto_vscrollbar__" >
+                        <Property name="VerticalScrollbar" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="GlossySerpentFHD/Listbox" name="PlayersTeamOneListBox" >
+                    <Property name="Area" value="{{0,0},{0.2,0},{1,0},{1,0}}" />
+                    <Property name="Text" value="Modes disponibles" />
+                    <Property name="MousePassThroughEnabled" value="true" />
+                    <Property name="MouseInputPropagationEnabled" value="true" />
+                    <AutoWindow namePath="__auto_vscrollbar__" >
+                        <Property name="VerticalScrollbar" value="true" />
+                    </AutoWindow>
+                </Window>
+            </Window>
+            <Window type="GlossySerpentFHD/Button" name="PlayersTeamTwoButton" >
+                <Property name="Area" value="{{0.55,0},{0.3,0},{0.9,0},{0.8,0}}" />
+                <Window type="GlossySerpentFHD/StaticText" name="PlayersTeamTwoStaticText" >
+                    <Property name="Area" value="{{0.35,0},{0,0},{0.65,0},{0.2,0}}" />
+                    <Property name="Text" value="Equipe deux" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="FrameEnabled" value="false" />
+                    <Property name="BackgroundEnabled" value="false" />
+                    <Property name="MousePassThroughEnabled" value="true" />
+                    <Property name="MouseInputPropagationEnabled" value="true" />
+                    <AutoWindow namePath="__auto_vscrollbar__" >
+                        <Property name="VerticalScrollbar" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="GlossySerpentFHD/StaticText" name="PlayersTeamTwoHoverStaticText" >
+                    <Property name="Area" value="{{0.25,0},{0,0},{0.85,0},{0.2,0}}" />
+                    <Property name="Text" value="Cliquer pour rejoindre l'équipe deux" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="Visible" value="false" />
+                    <Property name="FrameEnabled" value="false" />
+                    <Property name="BackgroundEnabled" value="false" />
+                    <Property name="MousePassThroughEnabled" value="true" />
+                    <Property name="MouseInputPropagationEnabled" value="true" />
+                    <AutoWindow namePath="__auto_vscrollbar__" >
+                        <Property name="VerticalScrollbar" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="GlossySerpentFHD/Listbox" name="PlayersTeamTwoListBox" >
+                    <Property name="Area" value="{{0,0},{0.2,0},{1,0},{1,0}}" />
+                    <Property name="Text" value="Modes disponibles" />
+                    <Property name="MousePassThroughEnabled" value="true" />
+                    <Property name="MouseInputPropagationEnabled" value="true" />
+                    <AutoWindow namePath="__auto_vscrollbar__" >
+                        <Property name="VerticalScrollbar" value="true" />
+                    </AutoWindow>
+                </Window>
+            </Window>
+            <Window type="GlossySerpentFHD/Button" name="SpectateButton" >
+                <Property name="Area" value="{{0.6,0},{0.85,0},{0.9,0},{0.95,0}}" />
+                <Property name="Text" value="Spectateur" />
+            </Window>
+        </Window>
+		<Window type="GlossySerpentFHD/FrameWindow" name="OptionsWindow" >
+			<Property name="Area" value="{{0.389375,0},{0.196666,1},{0.619375,0},{0.787499,1}}" />
+			<Property name="Visible" value="false" />
+			<Property name="TitlebarEnabled" value="false" />
+			<Property name="CloseButtonEnabled" value="false" />
+			<Window type="GlossySerpentFHD/StaticText" name="OptionWindowLabel" >
+				<Property name="Area" value="{{0.2,0},{0.1,0},{0.8,0},{0.2,0}}" />
+				<Property name="Text" value="OPTIONS" />
+				<Property name="MaxSize" value="{{1,0},{1,0}}" />
+				<Property name="FrameEnabled" value="false" />
+				<Property name="HorzFormatting" value="CentreAligned" />
+				<Property name="BackgroundEnabled" value="false" />
+				<AutoWindow namePath="__auto_vscrollbar__" >
+					<Property name="VerticalScrollbar" value="true" />
+				</AutoWindow>
+			</Window>
+			<Window type="GlossySerpentFHD/Button" name="OptionsGraphicButton" >
+				<Property name="Area" value="{{0.2,0},{0.25,-3},{0.8,0},{0.33,-3}}" />
+				<Property name="Text" value="GRAPHIQUE" />
+                <Property name="NormalTextColour" value="FFB4DC25" />
+			</Window>
+			<Window type="GlossySerpentFHD/Button" name="OptionsSoundButton" >
+				<Property name="Area" value="{{0.2,0},{0.38,0},{0.8,0},{0.46,0}}" />
+				<Property name="Text" value="SON" />
+                <Property name="NormalTextColour" value="FFB4DC25" />
+			</Window>
+			<Window type="GlossySerpentFHD/Button" name="OptionsKeysButton" >
+				<Property name="Area" value="{{0.2,0},{0.51,0},{0.8,0},{0.59,0}}" />
+				<Property name="Text" value="CLAVIER" />
+                <Property name="NormalTextColour" value="FFB4DC25" />
+			</Window>
+			<Window type="GlossySerpentFHD/Button" name="OptionsNickButton" >
+				<Property name="Area" value="{{0.2,0},{0.64,1},{0.8,0},{0.72,1}}" />
+				<Property name="Text" value="CHANGER NOM" />
+                <Property name="NormalTextColour" value="FFB4DC25" />
+			</Window>
+			<Window type="GlossySerpentFHD/Editbox" name="OptionsNickEditbox" >
+				<Property name="Area" value="{{0.2,0},{0.64,0},{0.8,0},{0.72,0}}" />
+				<Property name="Visible" value="false" />
+                <Property name="NormalTextColour" value="FFB4DC25" />
+			</Window>
+			<Window type="GlossySerpentFHD/Button32_4C" name="OptionsValidate" >
+				<Property name="Area" value="{{0.2,0},{0.82,0},{0.8,0},{0.9,0}}" />
+				<Property name="Text" value="OK" />
+                <Property name="NormalTextColour" value="FFF05004" />
+			</Window>
+		</Window>
+		<Window type="GlossySerpentFHD/FrameWindow" name="SoundPreferences" >
+			<Property name="Area" value="{{0.25,0},{0.25,0},{0.75,0},{0.75,0}}" />
+			<Property name="Visible" value="false" />
+			<Property name="SizingEnabled" value="false" />
+			<Property name="TitlebarEnabled" value="false" />
+			<Property name="CloseButtonEnabled" value="false" />
+			<Property name="AutoRenderingSurface" value="true" />
+			<AutoWindow namePath="__auto_titlebar__" >
+				<Property name="NonClient" value="true" />
+				<Property name="AlwaysOnTop" value="false" />
+			</AutoWindow>
+			<AutoWindow namePath="__auto_closebutton__" >
+				<Property name="NonClient" value="true" />
+				<Property name="AlwaysOnTop" value="true" />
+			</AutoWindow>
+			<Window type="OgreTray/VerticalScrollbar" name="SoundVolumeScrollbar" >
+				<Property name="Area" value="{{0.776618,0},{0.35632,0},{0.816701,0},{0.756134,0}}" />
+				<AutoWindow namePath="__auto_incbtn__" >
+					<Property name="Visible" value="false" />
+				</AutoWindow>
+				<AutoWindow namePath="__auto_decbtn__" >
+					<Property name="Visible" value="false" />
+				</AutoWindow>
+			</Window>
+			<Window type="GlossySerpentFHD/StaticText" name="SoundOptionsTitle" >
+				<Property name="Area" value="{{0.3,0},{0.01,0},{0.699582,0},{0.210743,0}}" />
+				<Property name="Text" value="Options du son" />
+				<Property name="MaxSize" value="{{1,0},{1,0}}" />
+				<Property name="HorzFormatting" value="CentreAligned" />
+				<Property name="FrameEnabled" value="false" />
+				<Property name="BackgroundEnabled" value="false" />
+				<AutoWindow namePath="__auto_hscrollbar__" >
+					<AutoWindow namePath="__auto_incbtn__" >
+						<Property name="Visible" value="false" />
+					</AutoWindow>
+					<AutoWindow namePath="__auto_decbtn__" >
+						<Property name="Visible" value="false" />
+					</AutoWindow>
+				</AutoWindow>
+				<AutoWindow namePath="__auto_vscrollbar__" >
+					<AutoWindow namePath="__auto_incbtn__" >
+						<Property name="Visible" value="false" />
+					</AutoWindow>
+					<AutoWindow namePath="__auto_decbtn__" >
+						<Property name="Visible" value="false" />
+					</AutoWindow>
+				</AutoWindow>
+			</Window>
+			<Window type="GlossySerpentFHD/Button32_4C" name="SoundValidate" >
+				<Property name="Area" value="{{0.1,0},{0.8,0},{0.3,0},{0.9,0}}" />
+				<Property name="Text" value="OK" />
+                <Property name="NormalTextColour" value="FFF05004" />
+			</Window>
+			<Window type="GlossySerpentFHD/StaticText" name="SoundVolumeLabel" >
+				<Property name="Area" value="{{0.549896,0},{0.455019,0},{0.750314,0},{0.655762,0}}" />
+				<Property name="Text" value="Volume" />
+				<Property name="MaxSize" value="{{1,0},{1,0}}" />
+				<Property name="FrameEnabled" value="false" />
+				<Property name="HorzFormatting" value="CentreAligned" />
+				<Property name="BackgroundEnabled" value="false" />
+				<AutoWindow namePath="__auto_vscrollbar__" >
+					<Property name="VerticalScrollbar" value="true" />
+				</AutoWindow>
+			</Window>
+			<Window type="GlossySerpentFHD/StaticText" name="SoundMuteLabel" >
+				<Property name="Area" value="{{0.120251,0},{0.458364,0},{0.320669,0},{0.659108,0}}" />
+				<Property name="Text" value="Mute" />
+				<Property name="MaxSize" value="{{1,0},{1,0}}" />
+				<Property name="FrameEnabled" value="false" />
+				<Property name="HorzFormatting" value="CentreAligned" />
+				<Property name="BackgroundEnabled" value="false" />
+				<AutoWindow namePath="__auto_vscrollbar__" >
+					<Property name="VerticalScrollbar" value="true" />
+				</AutoWindow>
+			</Window>
+			<Window type="OgreTray/Checkbox" name="SoundMuteCheckbox" >
+				<Property name="Area" value="{{0.229228,0},{0.526952,0},{0.389562,0},{0.580484,0}}" />
+			</Window>
+		</Window>
+		<Window type="GlossySerpentFHD/FrameWindow" name="GraphicOptionsWindow" >
+            <Property name="Area" value="{{0.1825,0},{0.0800003,0},{0.82625,0},{0.8925,0}}" />
+            <Property name="Visible" value="false" />
+            <Property name="RollUpEnabled" value="false" />
+            <Property name="SizingEnabled" value="false" />
+            <Property name="TitlebarEnabled" value="false" />
+            <Property name="DragMovingEnabled" value="false" />
+            <Property name="CloseButtonEnabled" value="false" />
+            <Property name="AutoRenderingSurface" value="true" />
+            <AutoWindow namePath="__auto_titlebar__" >
+                <Property name="NonClient" value="true" />
+                <Property name="AlwaysOnTop" value="false" />
+                <Property name="DraggingEnabled" value="false" />
+            </AutoWindow>
+            <AutoWindow namePath="__auto_closebutton__" >
+                <Property name="NonClient" value="true" />
+                <Property name="AlwaysOnTop" value="true" />
+            </AutoWindow>
+            <Window type="GlossySerpentFHD/StaticText" name="OptionsStaticText" >
+                <Property name="Area" value="{{0.45316,0},{0.0653269,0},{0.583468,0},{0.10953,0}}" />
+                <Property name="Text" value="OPTIONS" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="false" />
+                <Property name="BackgroundEnabled" value="false" />
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <Property name="VerticalScrollbar" value="true" />
+                </AutoWindow>
+            </Window>
+            <Window type="GlossySerpentFHD/ScrollablePane" name="ScrollablePane" >
+                <Property name="Area" value="{{0.0466775,0},{0.105963,0},{0.952026,0},{0.839944,0}}" />
+                <Property name="ContentArea" value="l:0 t:0 r:890 b:805" />
+                <AutoWindow namePath="__auto_container__" >
+                    <Property name="ContentArea" value="l:0 t:0 r:890 b:805" />
+                    <Property name="MouseInputPropagationEnabled" value="true" />
+                    <Window type="GlossySerpentFHD/StaticText" name="WindowOptionsStaticText" >
+                        <Property name="Area" value="{{0.441345,0},{0.0743541,0},{0.569165,0},{0.124659,0}}" />
+                        <Property name="Text" value="FENETRE" />
+                        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                        <Property name="FrameEnabled" value="false" />
+                        <Property name="BackgroundEnabled" value="false" />
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <Property name="VerticalScrollbar" value="true" />
+                        </AutoWindow>
+                    </Window>
+                    <Window type="GlossySerpentFHD/Listbox" name="DisplayTypeListbox2" >
+                        <Property name="Area" value="{{0.319012,0},{0.247653,0},{0.940924,0},{0.317775,0}}" />
+                        <Property name="Visible" value="false" />
+                        <Property name="ForceVertScrollbar" value="true" />
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <Property name="VerticalScrollbar" value="true" />
+                        </AutoWindow>
+                    </Window>
+                    <Window type="GlossySerpentFHD/StaticText" name="DisplayTypeStaticText" >
+                        <Property name="Area" value="{{0.0794844,0},{0.248644,0},{0.309345,0},{0.32029,0}}" />
+                        <Property name="Text" value="Affichage" />
+                        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                        <Property name="FrameEnabled" value="false" />
+                        <Property name="BackgroundEnabled" value="false" />
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <Property name="VerticalScrollbar" value="true" />
+                        </AutoWindow>
+                    </Window>
+                    <Window type="GlossySerpentFHD/StaticText" name="ResolutionStaticText" >
+                        <Property name="Area" value="{{0.0805586,0},{0.150573,0},{0.252417,0},{0.210025,0}}" />
+                        <Property name="Text" value="Résolution" />
+                        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                        <Property name="FrameEnabled" value="false" />
+                        <Property name="BackgroundEnabled" value="false" />
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <Property name="VerticalScrollbar" value="true" />
+                        </AutoWindow>
+                    </Window>
+                    <Window type="GlossySerpentFHD/Listbox" name="ResolutionListbox2" >
+                        <Property name="Area" value="{{0.316864,0},{0.14463,0},{0.93985,0},{0.211703,0}}" />
+                        <Property name="Visible" value="false" />
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <Property name="VerticalScrollbar" value="true" />
+                        </AutoWindow>
+                    </Window>
+                    <Window type="GlossySerpentFHD/StaticText" name="PostFXStaticText" >
+                        <Property name="Area" value="{{0.445757,0},{0.235766,0},{0.903329,0},{0.516254,0}}" />
+                        <Property name="Text" value="POST FX" />
+                        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                        <Property name="FrameEnabled" value="false" />
+                        <Property name="BackgroundEnabled" value="false" />
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <Property name="VerticalScrollbar" value="true" />
+                        </AutoWindow>
+                    </Window>
+                    <Window type="GlossySerpentFHD/StaticText" name="DisplayCursorStaticText" >
+                        <Property name="Area" value="{{0.0805585,-4},{0.424973,452},{0.247046,-4},{0.495095,452}}" />
+                        <Property name="Text" value="Affichage curseur" />
+                        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                        <Property name="FrameEnabled" value="false" />
+                        <Property name="BackgroundEnabled" value="false" />
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <Property name="VerticalScrollbar" value="true" />
+                        </AutoWindow>
+                    </Window>
+                    <Window type="GlossySerpentFHD/Checkbox" name="DisplayCursorCheckbox" >
+                        <Property name="Area" value="{{0.90142,14},{0.42577,452},{0.954051,14},{0.48827,452}}" />
+                    </Window>
+                    <Window type="GlossySerpentFHD/StaticText" name="VSyncStaticText" >
+                        <Property name="Area" value="{{0.0816104,0},{0.495775,0},{0.184725,0},{0.55675,0}}" />
+                        <Property name="Text" value="VSync" />
+                        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                        <Property name="FrameEnabled" value="false" />
+                        <Property name="BackgroundEnabled" value="false" />
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <Property name="VerticalScrollbar" value="true" />
+                        </AutoWindow>
+                    </Window>
+                    <Window type="GlossySerpentFHD/Checkbox" name="VSyncCheckbox" >
+                        <Property name="Area" value="{{0.902208,0},{0.495182,0},{0.95484,0},{0.557682,0}}" />
+                    </Window>
+                    <Window type="GlossySerpentFHD/StaticText" name="FXAAStaticText" >
+                        <Property name="Area" value="{{0.0805223,0},{0.570494,0},{0.15034,0},{0.614702,0}}" />
+                        <Property name="Text" value="FXAA" />
+                        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                        <Property name="FrameEnabled" value="false" />
+                        <Property name="BackgroundEnabled" value="false" />
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <Property name="VerticalScrollbar" value="true" />
+                        </AutoWindow>
+                    </Window>
+                    <Window type="GlossySerpentFHD/Checkbox" name="FXAACheckbox" >
+                        <Property name="Area" value="{{0.902222,0},{0.558795,0},{0.954853,0},{0.621295,0}}" />
+                    </Window>
+                    <Window type="GlossySerpentFHD/StaticText" name="BloomStaticText" >
+                        <Property name="Area" value="{{0.0772579,0},{0.644202,0},{0.164261,0},{0.683836,0}}" />
+                        <Property name="Text" value="Bloom" />
+                        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                        <Property name="FrameEnabled" value="false" />
+                        <Property name="BackgroundEnabled" value="false" />
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <Property name="VerticalScrollbar" value="true" />
+                        </AutoWindow>
+                    </Window>
+                    <Window type="GlossySerpentFHD/Checkbox" name="BloomCheckbox" >
+                        <Property name="Area" value="{{0.901162,0},{0.631039,0},{0.953793,0},{0.693539,0}}" />
+                    </Window>
+                    <Window type="GlossySerpentFHD/StaticText" name="MotionBlurStaticText" >
+                        <Property name="Area" value="{{0.0761698,0},{0.716905,0},{0.24588,0},{0.750442,0}}" />
+                        <Property name="Text" value="Motion Blur" />
+                        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                        <Property name="FrameEnabled" value="false" />
+                        <Property name="BackgroundEnabled" value="false" />
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <Property name="VerticalScrollbar" value="true" />
+                        </AutoWindow>
+                    </Window>
+                    <Window type="GlossySerpentFHD/Checkbox" name="MotionBlurCheckbox" >
+                        <Property name="Area" value="{{0.901148,0},{0.703742,0},{0.953779,0},{0.766242,0}}" />
+                        <Property name="Disabled" value="true" />
+                    </Window>
+                    <Window type="GlossySerpentFHD/StaticText" name="BloomCoeffStaticText" >
+                        <Property name="Area" value="{{0.0772579,0},{0.779842,0},{0.242671,0},{0.825574,0}}" />
+                        <Property name="Text" value="Bloom Coeff" />
+                        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                        <Property name="FrameEnabled" value="false" />
+                        <Property name="BackgroundEnabled" value="false" />
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <Property name="VerticalScrollbar" value="true" />
+                        </AutoWindow>
+                    </Window>
+                    <Window type="GlossySerpentFHD/Editbox" name="BloomCoeffEditbox" >
+                        <Property name="Area" value="{{0.714768,0},{0.779203,0},{0.943554,0},{0.841703,0}}" />
+                    </Window>
+                    <Window type="GlossySerpentFHD/StaticText" name="HUDStaticText" >
+                        <Property name="Area" value="{{0.461371,0},{0.820122,0},{0.526892,0},{0.896341,0}}" />
+                        <Property name="Text" value="HUD" />
+                        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                        <Property name="FrameEnabled" value="false" />
+                        <Property name="BackgroundEnabled" value="false" />
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <Property name="VerticalScrollbar" value="true" />
+                        </AutoWindow>
+                    </Window>
+                    <Window type="GlossySerpentFHD/StaticText" name="DisplayAimStaticText" >
+                        <Property name="Area" value="{{0.0772579,0},{0.954268,0},{0.245894,0},{1,0}}" />
+                        <Property name="Text" value="Affichage visée" />
+                        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                        <Property name="FrameEnabled" value="false" />
+                        <Property name="BackgroundEnabled" value="false" />
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <Property name="VerticalScrollbar" value="true" />
+                        </AutoWindow>
+                    </Window>
+                    <Window type="GlossySerpentFHD/Checkbox" name="DisplayAimCheckbox" >
+                        <Property name="Area" value="{{0.911903,0},{0.942073,0},{0.964534,0},{1.00457,0}}" />
+                    </Window>
+                    <Window type="GlossySerpentFHD/StaticText" name="DisplayBackgroundStaticText" >
+                        <Property name="Area" value="{{0.0772579,0},{1.04116,0},{0.333971,0},{1.08689,0}}" />
+                        <Property name="Text" value="Affichage arrière plan" />
+                        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                        <Property name="FrameEnabled" value="false" />
+                        <Property name="BackgroundEnabled" value="false" />
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <Property name="VerticalScrollbar" value="true" />
+                        </AutoWindow>
+                    </Window>
+                    <Window type="GlossySerpentFHD/Checkbox" name="DisplayBackgroundCheckbox" >
+                        <Property name="Area" value="{{0.911861,0},{1.02896,0},{0.964492,0},{1.09146,0}}" />
+                    </Window>
+                    <Window type="GlossySerpentFHD/Combobox" name="ResolutionListbox" >
+                        <Property name="Area" value="{{0.316864,0},{0.150915,0},{0.940924,0},{0.224085,191}}" />
+                        <AutoWindow namePath="__auto_editbox__" >
+                            <Property name="SelectedTextColour" value="FFFFFFDD" />
+                            <Property name="ActiveSelectionColour" value="FFFFB080" />
+                            <Property name="InactiveSelectionColour" value="FFB18A50" />
+                        </AutoWindow>
+                        <AutoWindow namePath="__auto_droplist__" >
+                            <AutoWindow namePath="__auto_hscrollbar__" >
+                                <AutoWindow namePath="__auto_incbtn__" >
+                                    <Property name="RestoreOldCapture" value="true" />
+                                </AutoWindow>
+                                <AutoWindow namePath="__auto_decbtn__" >
+                                    <Property name="RestoreOldCapture" value="true" />
+                                </AutoWindow>
+                                <AutoWindow namePath="__auto_thumb__" >
+                                    <Property name="RestoreOldCapture" value="true" />
+                                </AutoWindow>
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_vscrollbar__" >
+                                <Property name="VerticalScrollbar" value="true" />
+                                <AutoWindow namePath="__auto_incbtn__" >
+                                    <Property name="RestoreOldCapture" value="true" />
+                                </AutoWindow>
+                                <AutoWindow namePath="__auto_decbtn__" >
+                                    <Property name="RestoreOldCapture" value="true" />
+                                </AutoWindow>
+                                <AutoWindow namePath="__auto_thumb__" >
+                                    <Property name="RestoreOldCapture" value="true" />
+                                </AutoWindow>
+                            </AutoWindow>
+                        </AutoWindow>
+                    </Window>
+                    <Window type="GlossySerpentFHD/Combobox" name="DisplayTypeListbox" >
+                        <Property name="Area" value="{{0.319012,0},{0.248476,0},{0.944146,0},{0.323171,225}}" />
+                        <Property name="ReadOnly" value="true" />
+                        <AutoWindow namePath="__auto_editbox__" >
+                            <Property name="ReadOnly" value="true" />
+                            <Property name="SelectedTextColour" value="FFFFFFDD" />
+                            <Property name="ActiveSelectionColour" value="FFFFB080" />
+                            <Property name="InactiveSelectionColour" value="FFB18A50" />
+                        </AutoWindow>
+                        <AutoWindow namePath="__auto_droplist__" >
+                            <AutoWindow namePath="__auto_hscrollbar__" >
+                                <AutoWindow namePath="__auto_incbtn__" >
+                                    <Property name="RestoreOldCapture" value="true" />
+                                </AutoWindow>
+                                <AutoWindow namePath="__auto_decbtn__" >
+                                    <Property name="RestoreOldCapture" value="true" />
+                                </AutoWindow>
+                                <AutoWindow namePath="__auto_thumb__" >
+                                    <Property name="RestoreOldCapture" value="true" />
+                                </AutoWindow>
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_vscrollbar__" >
+                                <Property name="VerticalScrollbar" value="true" />
+                                <AutoWindow namePath="__auto_incbtn__" >
+                                    <Property name="RestoreOldCapture" value="true" />
+                                </AutoWindow>
+                                <AutoWindow namePath="__auto_decbtn__" >
+                                    <Property name="RestoreOldCapture" value="true" />
+                                </AutoWindow>
+                                <AutoWindow namePath="__auto_thumb__" >
+                                    <Property name="RestoreOldCapture" value="true" />
+                                </AutoWindow>
+                            </AutoWindow>
+                        </AutoWindow>
+                    </Window>
+                </AutoWindow>
+                <AutoWindow namePath="__auto_hscrollbar__" >
+                    <Property name="NonClient" value="true" />
+                    <Property name="AlwaysOnTop" value="true" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <Property name="NonClient" value="true" />
+                    <Property name="AlwaysOnTop" value="true" />
+                    <Property name="VerticalScrollbar" value="true" />
+                </AutoWindow>
+            </Window>
+            <Window type="GlossySerpentFHD/Button" name="ValidateGraphicOptionsButton" >
+                <Property name="Area" value="{{0.632091,0},{0.888178,0},{0.952998,0},{0.959109,0}}" />
+                <Property name="Text" value="Sauvegarder (besoin de redémarrer)" />
+                <Property name="HoverTextColour" value="FFB4DC25" />
+                <Property name="PushedTextColour" value="FFB4DC25" />
+            </Window>
+        </Window>
+        <Window type="GlossySerpentFHD/FrameWindow" name="ChatWindow" >
+            <Property name="Area" value="{{0,0},{0.768333,0},{0.1,210},{0.998333,0}}" />
+            <Property name="Visible" value="false" />
+            <Property name="SizingEnabled" value="false" />
+            <Property name="TitlebarEnabled" value="false" />
+            <Property name="DragMovingEnabled" value="false" />
+            <Property name="CloseButtonEnabled" value="false" />
+            <Property name="AutoRenderingSurface" value="true" />
+            <Window type="GlossySerpentFHD/Editbox" name="ChatInput" >
+                <Property name="Area" value="{{-0.00479233,0},{0.825487,0},{1.0016,0},{1.00812,0}}" />
+                <Property name="BlinkCaret" value="true" />
+            </Window>
+            <Window type="GlossySerpentFHD/StaticText" name="ChatHistory" >
+                <Property name="Area" value="{{0,0},{0,-1},{0.97,0},{0.82,-1}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="true" />
+                <Property name="HorzFormatting" value="WordWrapLeftAligned" />
+                <Property name="VertFormatting" value="BottomAligned" />
+                <Property name="BackgroundEnabled" value="true" />
+            </Window>
+            <Window type="OgreTray/VerticalScrollbar" name="ChatScrollbar" >
+                <Property name="Area" value="{{0,-1},{0,1},{0.035,-1},{0.810876,1}}" />
+                <Property name="HorizontalAlignment" value="Right" />
+                <Property name="AlwaysOnTop" value="true" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

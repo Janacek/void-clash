@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<window WindowSizeX="1600" WindowSizeY="900" Fullscreen="0" Borderless="0" />
+<postfx FpsLimit="0" VSync="1" FXAA="0" Bloom="1" BloomCoeff="8" MotionBlur="1" />
+<maxentities MaxParticleSystem="200" MaxPlayer="100" MaxWall="1000" MaxSpeedfield="100" MaxRespawn="10" MaxFlag="10" MaxBullet="5000" MaxBomb="1000" MaxRocket="10" MaxTurret="1000" MaxGravityfield="1000" MaxBot="250" MaxCapture="100" />
+<hud DisplayAim="1" DisplayBackground="1" DisplayCursor="1" />

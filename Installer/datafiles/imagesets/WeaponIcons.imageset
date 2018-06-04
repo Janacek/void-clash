@@ -1,0 +1,7 @@
+<Imageset autoScaled="" imagefile="WeaponIcons.png" name="WeaponIcons" nativeHorzRes="1920" nativeVertRes="1080" version="2">
+    <Image height="512" name="GravityIcon" width="512" xPos="1" yPos="1" />
+    <Image height="512" name="BombIcon" width="512" xPos="512" yPos="1" />
+    <Image height="512" name="TurretIcon" width="512" xPos="1" yPos="512" />
+    <Image height="512" name="BulletIcon" width="512" xPos="512" yPos="512" />
+    <Image height="512" name="ShieldIcon" width="512" xPos="1" yPos="1024" />
+</Imageset>
